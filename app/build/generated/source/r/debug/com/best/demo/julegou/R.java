@@ -1590,7 +1590,16 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020042;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020043;
         public static final int abc_textfield_search_material=0x7f020044;
-        public static final int notification_template_icon_bg=0x7f020045;
+        public static final int fenxiang=0x7f020045;
+        public static final int gouwuche=0x7f020046;
+        public static final int jia=0x7f020047;
+        public static final int jian=0x7f020048;
+        public static final int message=0x7f020049;
+        public static final int notification_template_icon_bg=0x7f02004e;
+        public static final int share=0x7f02004a;
+        public static final int xuanze=0x7f02004b;
+        public static final int you=0x7f02004c;
+        public static final int zan=0x7f02004d;
     }
     public static final class id {
         public static final int action0=0x7f0c0050;
@@ -1721,22 +1730,24 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f040016;
         public static final int abc_search_view=0x7f040017;
         public static final int abc_select_dialog_material=0x7f040018;
-        public static final int activity_main=0x7f040019;
-        public static final int notification_media_action=0x7f04001a;
-        public static final int notification_media_cancel_action=0x7f04001b;
-        public static final int notification_template_big_media=0x7f04001c;
-        public static final int notification_template_big_media_narrow=0x7f04001d;
-        public static final int notification_template_lines=0x7f04001e;
-        public static final int notification_template_media=0x7f04001f;
-        public static final int notification_template_part_chronometer=0x7f040020;
-        public static final int notification_template_part_time=0x7f040021;
-        public static final int select_dialog_item_material=0x7f040022;
-        public static final int select_dialog_multichoice_material=0x7f040023;
-        public static final int select_dialog_singlechoice_material=0x7f040024;
-        public static final int support_simple_spinner_dropdown_item=0x7f040025;
+        public static final int activity_certification=0x7f040019;
+        public static final int activity_main=0x7f04001a;
+        public static final int notification_media_action=0x7f04001b;
+        public static final int notification_media_cancel_action=0x7f04001c;
+        public static final int notification_template_big_media=0x7f04001d;
+        public static final int notification_template_big_media_narrow=0x7f04001e;
+        public static final int notification_template_lines=0x7f04001f;
+        public static final int notification_template_media=0x7f040020;
+        public static final int notification_template_part_chronometer=0x7f040021;
+        public static final int notification_template_part_time=0x7f040022;
+        public static final int select_dialog_item_material=0x7f040023;
+        public static final int select_dialog_multichoice_material=0x7f040024;
+        public static final int select_dialog_singlechoice_material=0x7f040025;
+        public static final int support_simple_spinner_dropdown_item=0x7f040026;
     }
     public static final class menu {
-        public static final int menu_main=0x7f0d0000;
+        public static final int menu_certification=0x7f0d0000;
+        public static final int menu_main=0x7f0d0001;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -1765,6 +1776,7 @@ containing a value of this type.
         public static final int app_name=0x7f060015;
         public static final int hello_world=0x7f060016;
         public static final int status_bar_notification_info_overflow=0x7f060013;
+        public static final int title_activity_certification=0x7f060017;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f09007d;
