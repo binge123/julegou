@@ -11,9 +11,13 @@
     <JAVADOC />
     <SOURCES>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <root url="jar://D:/Users/wen/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.1.0/support-v4-23.1.0-sources.jar!/" />
 =======
       <root url="jar://G:/Users/dell2/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.1.0/support-v4-23.1.0-sources.jar!/" />
+>>>>>>> xuxu_repositories
+=======
+      <root url="jar://F:/AndroidSDK/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.1.0/support-v4-23.1.0-sources.jar!/" />
 >>>>>>> xuxu_repositories
     </SOURCES>
   </library>

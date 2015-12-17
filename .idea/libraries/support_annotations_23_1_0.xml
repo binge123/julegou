@@ -2,6 +2,7 @@
   <library name="support-annotations-23.1.0">
     <CLASSES>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <root url="jar://D:/Users/wen/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
@@ -13,6 +14,13 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://G:/Users/dell2/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0-sources.jar!/" />
+>>>>>>> xuxu_repositories
+=======
+      <root url="jar://F:/AndroidSDK/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://F:/AndroidSDK/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0-sources.jar!/" />
 >>>>>>> xuxu_repositories
     </SOURCES>
   </library>
