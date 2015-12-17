@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,5 +8,70 @@
     <TextView android:text="@string/hello_world"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+=======
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <include android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"/>
+    <RadioGroup
+        android:id="@+id/rg"
+        android:background="#ECECEC"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
 
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/first_select"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="发现"
+            android:textSize="14sp"
+            android:button="@null"
+            android:drawableTop="@drawable/search_select"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="购物车"
+            android:button="@null"
+            android:textSize="14sp"
+            android:drawableTop="@drawable/car_select"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="我的"
+            android:button="@null"
+            android:drawableTop="@drawable/my_select"
+            android:layout_weight="1"/>
+>>>>>>> xuxu_repositories
+
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/fragment_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/rg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
 </RelativeLayout>
