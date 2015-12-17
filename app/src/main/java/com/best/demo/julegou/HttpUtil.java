@@ -21,7 +21,7 @@ public class HttpUtil extends AppCompatActivity{
         //把map中所有的key放入collection中
         Collection collection = map.keySet();
         //创建一个list集合
-                List<String> sets = (List<String>)collection;
+        List<String> sets = (List<String>)collection;
         //利用collections来进行排序
         Collections.sort(sets);
         //创建一个变量来储存连接后的字符串

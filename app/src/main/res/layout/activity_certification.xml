@@ -2,9 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.best.demo.julegou.Certification">
+    tools:context="com.best.demo.julegou.Certification"
+    android:background="#ccc">
 
     <RelativeLayout
+        android:id="@+id/Rel1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#ff0030">
@@ -23,6 +25,101 @@
             android:text="商家认证"
             android:textSize="25sp"
             android:textColor="#fff"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Rel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rel1">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="请输入姓名"
+            android:paddingLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"/>
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/name"
+            android:hint="请输入电话号码"
+            android:paddingLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"/>
+        <EditText
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/phone"
+            android:hint="请输入身份证号码"
+            android:paddingLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"/>
+        <EditText
+            android:id="@+id/shopname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/card"
+            android:hint="请输入店铺名称"
+            android:paddingLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"/>
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/shopname"
+            android:hint="请输入联系地址"
+            android:paddingLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"/>
+        <EditText
+            android:id="@+id/license"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/address"
+            android:hint="请输入营业执照号"
+            android:paddingLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"/>
+        <RelativeLayout
+            android:id="@+id/Rel3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/license"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="70dp"
+            android:background="#fff">
+            <TextView
+                android:id="@+id/licensetu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:hint="请选择营业执照图片"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addicon"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/licensetu"
+                android:layout_toEndOf="@+id/licensetu" />
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Rel3"
+            android:layout_marginTop="20dp"
+            android:text="确定提交"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/anniu"/>
     </RelativeLayout>
 
 </RelativeLayout>
