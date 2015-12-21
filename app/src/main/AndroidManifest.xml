@@ -18,6 +18,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ShopDetailsActivity">
+
+        </activity>
+        <activity android:name=".ShopViewPagerActivity">
+
+        </activity>
+        <activity android:name=".MyDingDanActivity">
+
+        </activity>
+        <activity android:name=".MyIntegralActivity">
+
+        </activity>
     </application>
 
 </manifest>

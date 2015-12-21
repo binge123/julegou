@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\julegou\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from G:\julegou\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from G:\julegou\app\src\main\AndroidManifest.xml
@@ -22,10 +22,12 @@ ADDED from G:\julegou\app\src\main\AndroidManifest.xml:5:5-81
 	android:name
 		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:5:22-78
 application
-ADDED from G:\julegou\app\src\main\AndroidManifest.xml:6:5-21:19
+ADDED from G:\julegou\app\src\main\AndroidManifest.xml:6:5-33:19
 MERGED from [com.android.support:appcompat-v7:23.1.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
-MERGED from [org.xutils:xutils:3.1.14] G:\julegou\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.14\AndroidManifest.xml:12:5-20
+MERGED from [org.xutils:xutils:3.1.15] G:\julegou\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.15\AndroidManifest.xml:12:5-20
+MERGED from [me.xiaopan:pagerslidingtabstrip:1.6.0] G:\julegou\app\build\intermediates\exploded-aar\me.xiaopan\pagerslidingtabstrip\1.6.0\AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:support-v4:23.1.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:9:9-41
 	android:allowBackup
@@ -52,11 +54,29 @@ category#android.intent.category.LAUNCHER
 ADDED from G:\julegou\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
 		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:18:27-74
+activity#com.best.demo.julegou.ShopDetailsActivity
+ADDED from G:\julegou\app\src\main\AndroidManifest.xml:21:9-23:20
+	android:name
+		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:21:19-54
+activity#com.best.demo.julegou.ShopViewPagerActivity
+ADDED from G:\julegou\app\src\main\AndroidManifest.xml:24:9-26:20
+	android:name
+		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:24:19-56
+activity#com.best.demo.julegou.MyDingDanActivity
+ADDED from G:\julegou\app\src\main\AndroidManifest.xml:27:9-29:20
+	android:name
+		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:27:19-52
+activity#com.best.demo.julegou.MyIntegralActivity
+ADDED from G:\julegou\app\src\main\AndroidManifest.xml:30:9-32:20
+	android:name
+		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:30:19-53
 uses-sdk
 INJECTED from G:\julegou\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.1.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:20:5-43
-MERGED from [org.xutils:xutils:3.1.14] G:\julegou\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.14\AndroidManifest.xml:8:5-10:41
+MERGED from [org.xutils:xutils:3.1.15] G:\julegou\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.15\AndroidManifest.xml:8:5-10:41
+MERGED from [me.xiaopan:pagerslidingtabstrip:1.6.0] G:\julegou\app\build\intermediates\exploded-aar\me.xiaopan\pagerslidingtabstrip\1.6.0\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:support-v4:23.1.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from G:\julegou\app\src\main\AndroidManifest.xml
 		INJECTED from G:\julegou\app\src\main\AndroidManifest.xml

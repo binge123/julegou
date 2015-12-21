@@ -26,6 +26,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.best.demo.julegou.ShopDetailsActivity" >
+        </activity>
+        <activity android:name="com.best.demo.julegou.ShopViewPagerActivity" >
+        </activity>
+        <activity android:name="com.best.demo.julegou.MyDingDanActivity" >
+        </activity>
+        <activity android:name="com.best.demo.julegou.MyIntegralActivity" >
+        </activity>
     </application>
 
 </manifest>
