@@ -10,4 +10,6 @@
     <string name="item_jia">宝贝价格</string>
     <string name="item_shu">X2</string>
     <string name="sousuo">搜索</string>
+    <string name="gzdp">关注店铺</string>
+    <string name="scsp">收藏商品</string>
 </resources>

@@ -12,7 +12,7 @@
         <ImageView
             android:layout_width="20dp"
             android:layout_height="30dp"
-            android:id="@+id/s_back"
+            android:id="@+id/fl_back"
             android:background="@drawable/back"
             android:layout_marginLeft="20dp"/>
 
@@ -28,7 +28,7 @@
             android:background="@drawable/search"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/search"
-            android:layout_toRightOf="@id/s_back"
+            android:layout_toRightOf="@id/fl_back"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_centerHorizontal="true" />
@@ -41,5 +41,24 @@
             android:textColor="#FFF"
             android:text="@string/sousuo"/>
     </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fenlei_rl">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.best.utils.MyListViewForScollProblem
+                android:layout_width="80dp"
+                android:id="@+id/fl_cai"
+                android:layout_height="wrap_content">
 
+            </com.best.utils.MyListViewForScollProblem>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/fl_cai"></RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

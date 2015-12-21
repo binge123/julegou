@@ -26,7 +26,7 @@
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp">
                 <RelativeLayout
-                    android:layout_width="0"
+                    android:layout_width="wrap_content"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
@@ -44,7 +44,7 @@
                         android:layout_below="@id/f_fushi"/>
                 </RelativeLayout>
                 <RelativeLayout
-                    android:layout_width="0"
+                    android:layout_width="wrap_content"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
@@ -62,7 +62,7 @@
                         android:layout_below="@id/f_shuma"/>
                 </RelativeLayout>
                 <RelativeLayout
-                    android:layout_width="0"
+                    android:layout_width="wrap_content"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
@@ -80,7 +80,7 @@
                         android:layout_below="@id/f_shipin"/>
                 </RelativeLayout>
                 <RelativeLayout
-                    android:layout_width="0"
+                    android:layout_width="wrap_content"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
@@ -110,7 +110,7 @@
                 android:paddingRight="20dp"
                 android:paddingBottom="10dp">
                 <RelativeLayout
-                    android:layout_width="0"
+                    android:layout_width="wrap_content"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
@@ -128,7 +128,7 @@
                         android:layout_below="@id/f_jiaju"/>
                 </RelativeLayout>
                 <RelativeLayout
-                    android:layout_width="0"
+                    android:layout_width="wrap_content"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
@@ -146,7 +146,7 @@
                         android:layout_below="@id/f_qiche"/>
                 </RelativeLayout>
                 <RelativeLayout
-                    android:layout_width="0"
+                    android:layout_width="wrap_content"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
@@ -164,7 +164,7 @@
                         android:layout_below="@id/f_zhubao"/>
                 </RelativeLayout>
                 <RelativeLayout
-                    android:layout_width="0"
+                    android:layout_width="wrap_content"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView

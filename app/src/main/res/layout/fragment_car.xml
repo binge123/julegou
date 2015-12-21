@@ -21,23 +21,19 @@
         </ScrollView>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:id="@+id/g_jst"
             android:background="#fff"
             android:layout_alignParentBottom="true">
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:text="@string/c_jiesuan"
-                android:layout_alignTop="@id/c_js"
-                android:layout_alignBottom="@id/c_js"
                 android:gravity="center_vertical"
                 android:layout_toLeftOf="@+id/c_money" />
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@id/c_js"
-                android:layout_alignBottom="@id/c_js"
+                android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:text="@string/c_money"
                 android:id="@+id/c_money"

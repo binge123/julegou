@@ -41,10 +41,10 @@
             android:textColor="#FFF"
             android:text="@string/sousuo"/>
     </RelativeLayout>
-    <com.best.utils.MyListViewForScollProblem
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/search_rl">
 
-    </com.best.utils.MyListViewForScollProblem>
+    </ListView>
 </RelativeLayout>
