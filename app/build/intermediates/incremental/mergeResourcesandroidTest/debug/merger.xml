@@ -1,6 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<merger version="3"><dataSet config="main"><source path="E:\JuLeGou\app\src\androidTest\res"/><source path="E:\JuLeGou\app\build\generated\res\rs\androidTest\debug"/><source path="E:\JuLeGou\app\build\generated\res\resValues\androidTest\debug"/></dataSet><mergedItems/></merger>
-=======
-<merger version="3"><dataSet config="main"><source path="G:\julegou\app\src\androidTest\res"/><source path="G:\julegou\app\build\generated\res\rs\androidTest\debug"/><source path="G:\julegou\app\build\generated\res\resValues\androidTest\debug"/></dataSet><mergedItems/></merger>
->>>>>>> xuxu_repositories
+<merger version="3"><dataSet config="main"><source path="E:\Android\app\src\androidTest\res"/><source path="E:\Android\app\build\generated\res\rs\androidTest\debug"/><source path="E:\Android\app\build\generated\res\resValues\androidTest\debug"/></dataSet><mergedItems/></merger>
