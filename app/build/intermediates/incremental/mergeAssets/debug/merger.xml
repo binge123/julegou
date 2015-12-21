@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <merger version="3"><dataSet config="23.1.0"><source path="E:\JuLeGou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\assets"/></dataSet><dataSet config="23.1.0"><source path="E:\JuLeGou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\assets"/></dataSet><dataSet config="main"><source path="E:\JuLeGou\app\src\main\assets"/></dataSet><dataSet config="debug"><source path="E:\JuLeGou\app\src\debug\assets"/></dataSet></merger>
 =======
 <merger version="3"><dataSet config="23.1.0"><source path="G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\assets"/></dataSet><dataSet config="23.1.0"><source path="G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\assets"/></dataSet><dataSet config="main"><source path="G:\julegou\app\src\main\assets"/></dataSet><dataSet config="debug"><source path="G:\julegou\app\src\debug\assets"/></dataSet></merger>
@@ -8,3 +9,6 @@
 =======
 <merger version="3"><dataSet config="3.1.14"><source path="G:\julegou\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.14\assets"/></dataSet><dataSet config="23.1.0"><source path="G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\assets"/></dataSet><dataSet config="23.1.0"><source path="G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\assets"/></dataSet><dataSet config="main"><source path="G:\julegou\app\src\main\assets"/></dataSet><dataSet config="debug"><source path="G:\julegou\app\src\debug\assets"/></dataSet></merger>
 >>>>>>> xuxu_repositories
+=======
+<merger version="3"><dataSet config="3.1.15"><source path="E:\Android\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.15\assets"/></dataSet><dataSet config="23.1.0"><source path="E:\Android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\assets"/></dataSet><dataSet config="23.1.0"><source path="E:\Android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\assets"/></dataSet><dataSet config="main"><source path="E:\Android\app\src\main\assets"/></dataSet><dataSet config="debug"><source path="E:\Android\app\src\debug\assets"/></dataSet></merger>
+>>>>>>> 784c3a35e23da8405bf0a6e593d665cc1f909656

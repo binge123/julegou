@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/zbg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff0030"
+        android:paddingTop="10dp"
+        android:id="@+id/search_rl"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:id="@+id/s_back"
+            android:background="@drawable/back"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/textView"
+            android:hint="请输入宝贝名"
+            android:paddingLeft="5dp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:background="@drawable/search"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/search"
+            android:layout_toRightOf="@id/s_back"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:id="@+id/search"
+            android:textColor="#FFF"
+            android:text="@string/sousuo"/>
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_rl">
+
+    </ListView>
+</RelativeLayout>

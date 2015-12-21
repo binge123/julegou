@@ -2,52 +2,64 @@
 manifest
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:2:1-25:12
+=======
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:2:1-39:12
+>>>>>>> 784c3a35e23da8405bf0a6e593d665cc1f909656
 	package
-		ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:3:5-36
-		INJECTED from E:\JuLeGou\app\src\main\AndroidManifest.xml
-		INJECTED from E:\JuLeGou\app\src\main\AndroidManifest.xml
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:3:5-36
+		INJECTED from E:\Android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from E:\JuLeGou\app\src\main\AndroidManifest.xml
-		INJECTED from E:\JuLeGou\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from E:\JuLeGou\app\src\main\AndroidManifest.xml
-		INJECTED from E:\JuLeGou\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:5:22-78
 application
-ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:5:5-23:19
-MERGED from [com.android.support:appcompat-v7:23.1.0] E:\JuLeGou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.0] E:\JuLeGou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:6:5-37:19
+MERGED from [com.android.support:appcompat-v7:23.1.0] E:\Android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.0] E:\Android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:22:5-20
+MERGED from [org.xutils:xutils:3.1.15] E:\Android\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.15\AndroidManifest.xml:12:5-20
 	android:label
-		ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:9:9-41
 	android:allowBackup
-		ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:7:9-35
 	android:icon
-		ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:8:9-43
 	android:theme
-		ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:9:9-40
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:10:9-40
 activity#com.best.demo.julegou.MainActivity
-ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:10:9-18:20
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:11:9-15:20
 	android:label
-		ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:12:13-45
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:13:13-45
 	android:name
-		ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:11:13-41
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:13:13-17:29
-action#android.intent.action.MAIN
-ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:14:17-69
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:12:13-41
+activity#com.best.demo.julegou.LoginActivity
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:16:9-18:20
 	android:name
-		ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:14:25-66
-category#android.intent.category.LAUNCHER
-ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:16:17-77
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:16:19-48
+activity#com.best.demo.julegou.ZheCeActivity
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:19:9-22:20
 	android:name
-		ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:19:19-48
 activity#com.best.demo.julegou.Certification
-ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:19:9-22:20
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:23:9-26:20
 	android:label
-		ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:21:13-65
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:25:13-65
 	android:name
+<<<<<<< HEAD
 		ADDED from E:\JuLeGou\app\src\main\AndroidManifest.xml:20:13-42
 uses-sdk
 INJECTED from E:\JuLeGou\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
@@ -107,15 +119,27 @@ ADDED from G:\julegou\app\src\main\AndroidManifest.xml:11:9-20:20
 		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:14:13-47
 	android:name
 		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:12:13-41
+=======
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:24:13-42
+activity#com.best.demo.julegou.SearchActivity
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:27:9-33:20
+	android:name
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:27:19-49
+>>>>>>> 784c3a35e23da8405bf0a6e593d665cc1f909656
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from G:\julegou\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from G:\julegou\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from G:\julegou\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:31:27-74
+activity#com.best.demo.julegou.WangJiMiMaActivity
+ADDED from E:\Android\app\src\main\AndroidManifest.xml:34:9-36:20
+	android:name
+<<<<<<< HEAD
 		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:18:27-74
 activity#com.best.demo.julegou.ShopDetailsActivity
 ADDED from G:\julegou\app\src\main\AndroidManifest.xml:21:9-23:20
@@ -140,10 +164,17 @@ MERGED from [com.android.support:support-v4:23.1.0] G:\julegou\app\build\interme
 MERGED from [org.xutils:xutils:3.1.15] G:\julegou\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.15\AndroidManifest.xml:8:5-10:41
 MERGED from [me.xiaopan:pagerslidingtabstrip:1.6.0] G:\julegou\app\build\intermediates\exploded-aar\me.xiaopan\pagerslidingtabstrip\1.6.0\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:support-v4:23.1.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:20:5-43
+=======
+		ADDED from E:\Android\app\src\main\AndroidManifest.xml:34:19-53
+uses-sdk
+INJECTED from E:\Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:23.1.0] E:\Android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.0] E:\Android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\AndroidManifest.xml:20:5-43
+MERGED from [org.xutils:xutils:3.1.15] E:\Android\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.15\AndroidManifest.xml:8:5-10:41
+>>>>>>> 784c3a35e23da8405bf0a6e593d665cc1f909656
 	android:targetSdkVersion
-		INJECTED from G:\julegou\app\src\main\AndroidManifest.xml
-		INJECTED from G:\julegou\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from G:\julegou\app\src\main\AndroidManifest.xml
-		INJECTED from G:\julegou\app\src\main\AndroidManifest.xml
->>>>>>> xuxu_repositories
+		INJECTED from E:\Android\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Android\app\src\main\AndroidManifest.xml

@@ -47,14 +47,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
             ftt.commit();
         }
     }
-
-    @Override
-<<<<<<< HEAD
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-=======
     public void onClick(View v) {
         ftt = fm.beginTransaction();
         if(fm.findFragmentByTag("radioButton1") != null){
@@ -99,7 +91,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                 ftt.add(R.id.fragment_parent,sf,"radioButton4");
             }
         }
->>>>>>> xuxu_repositories
 
         ftt.commit();
     }

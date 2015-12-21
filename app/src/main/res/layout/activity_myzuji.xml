@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff0030"
+        android:paddingTop="10dp"
+        android:id="@+id/myzj_rl"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            android:layout_marginLeft="20dp"
+            android:onClick="zjBack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的足迹"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myzj_rl"
+        android:id="@+id/myzj_list">
+
+    </ListView>
+</RelativeLayout>

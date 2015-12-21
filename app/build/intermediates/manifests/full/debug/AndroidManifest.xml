@@ -18,14 +18,24 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.best.demo.julegou.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/MyActionBar" >
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.best.demo.julegou.LoginActivity" >
+        </activity>
+        <activity android:name="com.best.demo.julegou.ZheCeActivity" >
+        </activity>
+        <activity
+            android:name="com.best.demo.julegou.Certification"
+            android:label="@string/title_activity_certification" >
+        </activity>
+        <activity android:name="com.best.demo.julegou.SearchActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <activity
             android:name="com.best.demo.julegou.Certification"
@@ -39,6 +49,9 @@
         </activity>
         <activity android:name="com.best.demo.julegou.MyIntegralActivity" >
 >>>>>>> xuxu_repositories
+=======
+        <activity android:name="com.best.demo.julegou.WangJiMiMaActivity" >
+>>>>>>> 784c3a35e23da8405bf0a6e593d665cc1f909656
         </activity>
     </application>
 
