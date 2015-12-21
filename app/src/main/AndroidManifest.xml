@@ -18,9 +18,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".Certification"
             android:label="@string/title_activity_certification" >
+=======
+        <activity android:name=".ShopDetailsActivity">
+
+        </activity>
+        <activity android:name=".ShopViewPagerActivity">
+
+        </activity>
+        <activity android:name=".MyDingDanActivity">
+
+        </activity>
+        <activity android:name=".MyIntegralActivity">
+
+>>>>>>> xuxu_repositories
         </activity>
     </application>
 

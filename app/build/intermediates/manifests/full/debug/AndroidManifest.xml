@@ -26,9 +26,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
             android:name="com.best.demo.julegou.Certification"
             android:label="@string/title_activity_certification" >
+=======
+        <activity android:name="com.best.demo.julegou.ShopDetailsActivity" >
+        </activity>
+        <activity android:name="com.best.demo.julegou.ShopViewPagerActivity" >
+        </activity>
+        <activity android:name="com.best.demo.julegou.MyDingDanActivity" >
+        </activity>
+        <activity android:name="com.best.demo.julegou.MyIntegralActivity" >
+>>>>>>> xuxu_repositories
         </activity>
     </application>
 
