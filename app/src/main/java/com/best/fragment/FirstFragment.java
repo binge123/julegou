@@ -11,21 +11,25 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.best.demo.julegou.R;
 
+<<<<<<< HEAD
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
+=======
+>>>>>>> develop
 
 /**
  * Created by dell2 on 2015/12/17.
  */
+
 public class FirstFragment extends Fragment {
 
+<<<<<<< HEAD
     @ViewInject(R.id.first_banner)
     ViewPager vp;
     @ViewInject(R.layout.viewpagelayout1)
@@ -36,6 +40,8 @@ public class FirstFragment extends Fragment {
     View v3;
     private ImageHandler handler = new ImageHandler(new WeakReference<FirstFragment>(this));
     List<View> list = new ArrayList<>();
+=======
+>>>>>>> develop
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
