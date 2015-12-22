@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
+import org.xutils.view.annotation.ContentView;
+
 /**
  * Created by Administrator on 2015/12/21.
  */

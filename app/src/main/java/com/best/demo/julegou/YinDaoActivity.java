@@ -92,7 +92,7 @@ public class YinDaoActivity extends Activity {
     }
     public void tNext(View v)
     {
-        Intent i = new Intent(this,MainActivity.class);
+        Intent i = new Intent(this,ZheCeActivity.class);
         startActivity(i);
         this.finish();
     }

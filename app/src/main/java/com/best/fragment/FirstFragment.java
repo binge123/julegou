@@ -13,15 +13,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.best.demo.julegou.R;
 
-<<<<<<< HEAD
+
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
+import org.xutils.x;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
-=======
->>>>>>> develop
+
 
 /**
  * Created by dell2 on 2015/12/17.
@@ -29,24 +29,19 @@ import java.util.List;
 
 public class FirstFragment extends Fragment {
 
-<<<<<<< HEAD
-    @ViewInject(R.id.first_banner)
+
     ViewPager vp;
-    @ViewInject(R.layout.viewpagelayout1)
-    View v1;
-    @ViewInject(R.layout.viewpagelayout2)
-    View v2;
-    @ViewInject(R.layout.viewpagelayout3)
-    View v3;
+    View v1,v2,v3;
     private ImageHandler handler = new ImageHandler(new WeakReference<FirstFragment>(this));
     List<View> list = new ArrayList<>();
-=======
->>>>>>> develop
-    @Nullable
-    @Override
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_first,container,false);
-        vp.setCurrentItem(Integer.MAX_VALUE / 2);//默认在中间，使用户看不到边界
+        x.view().inject(getActivity());
+        vp = (ViewPager) v.findViewById(R.id.first_banner);
+        v1 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner1_layout,null);
+        v2 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner2_layout,null);
+        v3 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner3_layout,null);
         handler.sendEmptyMessageDelayed(ImageHandler.MSG_UPDATE_IMAGE, ImageHandler.MSG_DELAY);
         list.add(v1);
         list.add(v2);
@@ -136,7 +131,7 @@ public class FirstFragment extends Fragment {
             switch (msg.what) {
                 case MSG_UPDATE_IMAGE:
                     currentItem++;
-                    if (currentItem > 2) {
+                    if (currentItem > 3) {
                         currentItem = 0;
                     }
                     activity.vp.setCurrentItem(currentItem);

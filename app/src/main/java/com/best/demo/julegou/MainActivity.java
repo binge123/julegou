@@ -42,7 +42,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         rb4.setOnClickListener(this);
         fm = getSupportFragmentManager();
         rb1.setChecked(true);
-        SMSSDK.initSDK(this, "da9170a37e88", "7ad0f84c0bdd803d6d9eb4ece05bf56f");
         if(savedInstanceState == null){
             ftt = fm.beginTransaction();
             FirstFragment ff = new FirstFragment();
