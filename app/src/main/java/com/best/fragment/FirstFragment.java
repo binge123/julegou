@@ -37,7 +37,6 @@ public class FirstFragment extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_first,container,false);
-        x.view().inject(getActivity());
         vp = (ViewPager) v.findViewById(R.id.first_banner);
         v1 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner1_layout,null);
         v2 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner2_layout,null);

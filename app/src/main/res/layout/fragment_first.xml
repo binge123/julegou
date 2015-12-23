@@ -12,7 +12,7 @@
             android:layout_height="wrap_content">
             <android.support.v4.view.ViewPager
                 android:layout_width="fill_parent"
-                android:layout_height="@dimen/first_banner"
+                android:layout_height="120dp"
                 android:id="@+id/first_banner"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true" />

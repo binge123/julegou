@@ -53,7 +53,7 @@ application
 ADDED from E:\Android\app\src\main\AndroidManifest.xml:15:5-62:19
 MERGED from [com.android.support:appcompat-v7:23.1.1] E:\Android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] E:\Android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [org.xutils:xutils:3.1.15] E:\Android\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.15\AndroidManifest.xml:12:5-20
+MERGED from [org.xutils:xutils:3.1.20] E:\Android\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.20\AndroidManifest.xml:12:5-20
 MERGED from [me.xiaopan:pagerslidingtabstrip:1.6.0] E:\Android\app\build\intermediates\exploded-aar\me.xiaopan\pagerslidingtabstrip\1.6.0\AndroidManifest.xml:12:5-20
 MERGED from [com.android.support:support-v4:23.1.1] E:\Android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [Android:smssdk:unspecified] E:\Android\app\build\intermediates\exploded-aar\Android\smssdk\unspecified\AndroidManifest.xml:11:5-12:19
@@ -133,7 +133,7 @@ uses-sdk
 INJECTED from E:\Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.1.1] E:\Android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.1.1] E:\Android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [org.xutils:xutils:3.1.15] E:\Android\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.15\AndroidManifest.xml:8:5-10:41
+MERGED from [org.xutils:xutils:3.1.20] E:\Android\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.20\AndroidManifest.xml:8:5-10:41
 MERGED from [me.xiaopan:pagerslidingtabstrip:1.6.0] E:\Android\app\build\intermediates\exploded-aar\me.xiaopan\pagerslidingtabstrip\1.6.0\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:support-v4:23.1.1] E:\Android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [Android:smssdk:unspecified] E:\Android\app\build\intermediates\exploded-aar\Android\smssdk\unspecified\AndroidManifest.xml:7:5-9:41

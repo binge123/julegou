@@ -26,4 +26,5 @@ dependencies {
     //    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
     compile 'me.xiaopan:pagerslidingtabstrip:1.6.0'
     compile project(':smssdk')
+    compile files('libs/AMap_Location_V2.2.0_20151222.jar')
 }
