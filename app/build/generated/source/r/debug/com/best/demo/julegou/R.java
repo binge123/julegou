@@ -1908,9 +1908,9 @@ containing a value of this type.
         public static final int rel1=0x7f0e00ab;
         public static final int rel2=0x7f0e00ad;
         public static final int rel3=0x7f0e00af;
-        public static final int rel5=0x7f0e00b1;
-        public static final int rel6=0x7f0e00b3;
-        public static final int rels=0x7f0e00b5;
+        public static final int rel4=0x7f0e00b1;
+        public static final int rel5=0x7f0e00b3;
+        public static final int rel6=0x7f0e00b5;
         public static final int rg=0x7f0e0067;
         public static final int rl=0x7f0e00a4;
         public static final int rl1=0x7f0e00a5;

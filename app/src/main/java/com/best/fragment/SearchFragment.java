@@ -4,23 +4,30 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.amap.api.maps.AMap;
+import com.amap.api.maps.CameraUpdateFactory;
 import com.amap.api.maps.MapView;
+import com.amap.api.maps.model.CircleOptions;
+import com.amap.api.maps.model.LatLng;
 import com.best.adapter.SearchGridViewAdapter;
 import com.best.bean.GridViewItem;
 import com.best.demo.julegou.R;
 import com.best.demo.julegou.ShopDetailsActivity;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -37,21 +44,60 @@ public class SearchFragment extends Fragment {
     public AMapLocationListener mLocationListener;
     //声明mLocationOption对象
     public AMapLocationClientOption mLocationOption = null;
-
+    static int biao = 0;
+    double j,w;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_search,container,false);
         gv = (GridView) v.findViewById(R.id.gridView);
-        list.add(new GridViewItem("1","2","3","4","5"));
         list.add(new GridViewItem("1", "2", "3", "4", "5"));
-        list.add(new GridViewItem("1","2","3","4","5"));
-        list.add(new GridViewItem("1","2","3","4","5"));
-        //在onCreat方法中给aMap对象赋值
-        mapView = (MapView) v.findViewById(R.id.map);
-        mapView.onCreate(savedInstanceState);// 必须要写
-        aMap = mapView.getMap();
+        list.add(new GridViewItem("1", "2", "3", "4", "5"));
+        list.add(new GridViewItem("1", "2", "3", "4", "5"));
+        list.add(new GridViewItem("1", "2", "3", "4", "5"));
+        mLocationListener = new AMapLocationListener() {
+            @Override
+            public void onLocationChanged(AMapLocation amapLocation) {
+                if (biao == 0){
+                    if (amapLocation != null) {
+                        if (amapLocation.getErrorCode() == 0) {
+                            //定位成功回调信息，设置相关消息
+                            amapLocation.getLocationType();//获取当前定位结果来源，如网络定位结果，详见定位类型表
+                            j = amapLocation.getLatitude();//获取纬度
+                            w = amapLocation.getLongitude();//获取经度
+                            amapLocation.getAccuracy();//获取精度信息
+                            SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                            Date date = new Date(amapLocation.getTime());
+                            df.format(date);//定位时间
+                            amapLocation.getAddress();//地址，如果option中设置isNeedAddress为false，则没有此结果
+                            amapLocation.getCountry();//国家信息
+                            amapLocation.getProvince();//省信息
+                            amapLocation.getCity();//城市信息
+                            amapLocation.getDistrict();//城区信息
+                            amapLocation.getRoad();//街道信息
+                            amapLocation.getCityCode();//城市编码
+                            amapLocation.getAdCode();//地区编码
+                            CircleOptions circleOptions = new CircleOptions();
+                            Log.i("yinxu", j + " " + w);
+                            LatLng l = new LatLng(j,w);
+                            circleOptions.center(l);
+                            circleOptions.radius(10);
+                            aMap.moveCamera(CameraUpdateFactory.newLatLngZoom(l,14));
+                            aMap.clear();
+                            aMap.addCircle(circleOptions);
+                            biao+=1;
+                        } else {
+                            //显示错误信息ErrCode是错误码，errInfo是错误信息，详见错误码表。
+                            Log.e("AmapError", "location Error, ErrCode:"
+                                    + amapLocation.getErrorCode() + ", errInfo:"
+                                    + amapLocation.getErrorInfo());
+                        }
+                    }
+                }
+
+            }
+        };
         //初始化定位
         mLocationClient = new AMapLocationClient(getActivity());
         //设置定位回调监听
@@ -75,6 +121,10 @@ public class SearchFragment extends Fragment {
         //启动定位
         mLocationClient.startLocation();
 
+        //在onCreat方法中给aMap对象赋值
+        mapView = (MapView) v.findViewById(R.id.map);
+        mapView.onCreate(savedInstanceState);// 必须要写
+        aMap = mapView.getMap();
         final Intent intent = new Intent(getActivity(), ShopDetailsActivity.class);
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

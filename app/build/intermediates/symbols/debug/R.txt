@@ -726,9 +726,9 @@ int id rel 0x7f0e00a6
 int id rel1 0x7f0e00ab
 int id rel2 0x7f0e00ad
 int id rel3 0x7f0e00af
-int id rel5 0x7f0e00b1
-int id rel6 0x7f0e00b3
-int id rels 0x7f0e00b5
+int id rel4 0x7f0e00b1
+int id rel5 0x7f0e00b3
+int id rel6 0x7f0e00b5
 int id rg 0x7f0e0067
 int id rl 0x7f0e00a4
 int id rl1 0x7f0e00a5
