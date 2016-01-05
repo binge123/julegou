@@ -3,6 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ScrollView
+        android:scrollbars="none"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <RelativeLayout
@@ -36,6 +37,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/share"
                     android:orientation="vertical"
                     android:layout_weight="1"
                     android:layout_width="0dp"
@@ -112,13 +114,10 @@
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                    <ImageView
-                        android:background="@drawable/shangdianimg"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
                     <TextView
                         android:id="@+id/tv2"
                         android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/shangdianimg"
                         android:text="青春不再有"
                         android:textSize="18sp"
                         android:layout_width="wrap_content"

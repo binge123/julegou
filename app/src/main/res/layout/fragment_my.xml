@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/img_defined"/>
             <ImageView
-                android:id="@+id/denglu"
+                android:id="@+id/img1"
                 android:layout_marginLeft="10dp"
                 android:layout_centerVertical="true"
                 android:layout_width="wrap_content"
@@ -36,12 +36,12 @@
                 android:layout_toRightOf="@id/img"
                 android:background="@drawable/login_btn"/>
             <ImageView
-                android:id="@+id/zhuce"
+                android:id="@+id/img2"
                 android:layout_marginLeft="10dp"
                 android:layout_centerVertical="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/denglu"
+                android:layout_toRightOf="@id/img1"
                 android:background="@drawable/regist_btn"/>
 
         </RelativeLayout>

@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
 
+import com.best.utils.CubeTransformer;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +33,7 @@ public class YinDaoActivity extends Activity {
         viewPager = (ViewPager) findViewById(R.id.view);
         SharedPreferences fsp = getSharedPreferences("sp",MODE_PRIVATE);
         SharedPreferences.Editor feditor= fsp.edit();
-        feditor.putInt("first",1);
+        feditor.putInt("first", 1);
         feditor.commit();
         v1 = LayoutInflater.from(this).inflate(R.layout.viewpagelayout1,null);
         v2 = LayoutInflater.from(this).inflate(R.layout.viewpagelayout2,null);
@@ -46,25 +48,9 @@ public class YinDaoActivity extends Activity {
         list.add(v1);
         list.add(v2);
         list.add(v3);
+        viewPager.setPageTransformer(true,new CubeTransformer());
         viewPager.setAdapter(new MyAdapter());
-        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-                rbs.get(position).setChecked(true);
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-
-            }
-        });
     }
     class MyAdapter extends PagerAdapter {
 
@@ -92,7 +78,7 @@ public class YinDaoActivity extends Activity {
     }
     public void tNext(View v)
     {
-        Intent i = new Intent(this,ZheCeActivity.class);
+        Intent i = new Intent(this,MainActivity.class);
         startActivity(i);
         this.finish();
     }

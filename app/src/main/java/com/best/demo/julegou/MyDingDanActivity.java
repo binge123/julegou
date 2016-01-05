@@ -29,10 +29,15 @@ public class MyDingDanActivity extends Activity {
     private void init(int index, PagerSlidingTabStrip pagerSlidingTabStrip, ViewPager viewPager) {
         int length = pagerSlidingTabStrip.getTabCount();
         List<View> views = new ArrayList<View>(length);
-        views.add(LayoutInflater.from(MyDingDanActivity.this).inflate(R.layout.activity_alldingdan, null));
-        views.add(LayoutInflater.from(MyDingDanActivity.this).inflate(R.layout.activity_daifahuo, null));
-        views.add(LayoutInflater.from(MyDingDanActivity.this).inflate(R.layout.activity_daishouhuo, null));
-        views.add(LayoutInflater.from(MyDingDanActivity.this).inflate(R.layout.activity_daipingjia, null));
+        View all = LayoutInflater.from(MyDingDanActivity.this).inflate(R.layout.activity_alldingdan, null);
+        View daifa = LayoutInflater.from(MyDingDanActivity.this).inflate(R.layout.activity_daifahuo, null);
+        View daishou = LayoutInflater.from(MyDingDanActivity.this).inflate(R.layout.activity_daishouhuo, null);
+        View daiping = LayoutInflater.from(MyDingDanActivity.this).inflate(R.layout.activity_daipingjia, null);
+        views.add(all);
+        views.add(daifa);
+        views.add(daishou);
+        views.add(daiping);
+
         viewPager.setAdapter(new ViewPagerAdapter(views));
         viewPager.setCurrentItem(index < length ? index : length);
         pagerSlidingTabStrip.setViewPager(viewPager);

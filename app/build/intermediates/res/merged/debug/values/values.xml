@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/Android/smssdk/unspecified/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/smssdk/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string-array name="smssdk_country_group_a">
 		<item>阿尔巴尼亚,355,110,27601|27602|27603|27604</item>
@@ -274,7 +274,7 @@
 		<item>中非共和国,236,71,62301|62302|62303|62304</item>
 		<item>中国,86,42,46006|46007|46005|46002|46003|46000|46001</item>
     </string-array>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -294,26 +294,21 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/E:/Android/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="anniu_bg">#ff0030</color>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
-    <!-- From: file:/E:/Android/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="bai">#fff</color>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.bigkoo/pickerview/2.0.7/res/values/values.xml -->
-    <eat-comment/>
-    <color name="bgColor_overlay">#60000000</color>
-    <!-- From: file:/E:/Android/app/src/main/res/values/colors.xml -->
-    <eat-comment/>
     <color name="blue1">#ff0030</color>
     <color name="blue2">#000000</color>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -327,17 +322,17 @@
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/E:/Android/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="f_zi">#fb7014</color>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
-    <!-- From: file:/E:/Android/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="green">#FD87A9</color>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -355,17 +350,6 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.bigkoo/pickerview/2.0.7/res/values/values.xml -->
-    <eat-comment/>
-    <color name="pickerview_bg_topbar">#f5f5f5</color>
-    <color name="pickerview_timebtn_nor">#057dff</color>
-    <color name="pickerview_timebtn_pre">#c2daf5</color>
-    <color name="pickerview_topbar_title">#000000</color>
-    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
-    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
-    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
-    <eat-comment/>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -380,7 +364,7 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/Android/smssdk/unspecified/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/smssdk/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="smssdk_black">#ff000000</color>
     <color name="smssdk_gray">#ff898989</color>
@@ -391,13 +375,13 @@
     <color name="smssdk_lv_tv_color">#ff353535</color>
     <color name="smssdk_transparent">#00000000</color>
     <color name="smssdk_white">#ffffffff</color>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/E:/Android/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="zbg">#f2f2f2</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
@@ -429,8 +413,7 @@
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/></declare-styleable>
     <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <declare-styleable name="wheelview"><attr name="gravity"><enum name="center" value="17"/><enum name="left" value="3"/><enum name="right" value="5"/></attr><attr format="color" name="textColorOut"/><attr format="color" name="textColorCenter"/><attr format="color" name="dividerColor"/></declare-styleable>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -499,51 +482,31 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/E:/Android/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/E:/Android/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="first_banner">120dp</dimen>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/Android/multi-image-selector/unspecified/res/values/values.xml -->
-    <eat-comment/>
-    <dimen name="folder_cover_size">72dp</dimen>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/Android/multi-image-selector/unspecified/res/values/values.xml -->
-    <eat-comment/>
-    <dimen name="image_size">120dp</dimen>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
-    <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.bigkoo/pickerview/2.0.7/res/values/values.xml -->
-    <eat-comment/>
-    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
-    <dimen name="pickerview_topbar_height">44dp</dimen>
-    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
-    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
-    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/Android/multi-image-selector/unspecified/res/values/values.xml -->
-    <eat-comment/>
-    <dimen name="space_size">2dp</dimen>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
-    <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/Android/smssdk/unspecified/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/smssdk/unspecified/res/values/values.xml -->
     <eat-comment/>
     <drawable name="smssdk_dialog_btn_nor">#00000000</drawable>
     <drawable name="smssdk_dialog_btn_pre">#ff282a2b</drawable>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
@@ -557,11 +520,6 @@
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.bigkoo/pickerview/2.0.7/res/values/values.xml -->
-    <eat-comment/>
-    <integer name="animation_default_duration">300</integer>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
-    <eat-comment/>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -583,45 +541,20 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/E:/Android/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">聚乐购</string>
     <string name="c_jiesuan">合计：</string>
     <string name="c_money">¥ 0</string>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/Android/multi-image-selector/unspecified/res/values/values.xml -->
-    <eat-comment/>
-    <string name="folder_all">All Images</string>
-    <!-- From: file:/E:/Android/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="gzdp">关注店铺</string>
     <string name="hello_world">Hello world!</string>
     <string name="item_bao">宝贝名</string>
     <string name="item_dian">店铺名</string>
     <string name="item_jia">宝贝价格</string>
     <string name="item_shu">X2</string>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/Android/multi-image-selector/unspecified/res/values/values.xml -->
-    <eat-comment/>
-    <string name="msg_amount_limit">Select images amount is limit</string>
-    <string name="msg_no_camera">No system camera found</string>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.bigkoo/pickerview/2.0.7/res/values/values.xml -->
-    <eat-comment/>
-    <string name="pickerview_cancel">取消</string>
-    <string name="pickerview_day">日</string>
-    <string name="pickerview_hours">时</string>
-    <string name="pickerview_minutes">分</string>
-    <string name="pickerview_month">月</string>
-    <string name="pickerview_seconds">秒</string>
-    <string name="pickerview_submit">确定</string>
-    <string name="pickerview_year">年</string>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/Android/multi-image-selector/unspecified/res/values/values.xml -->
-    <eat-comment/>
-    <string name="preview">Preview</string>
-    <!-- From: file:/E:/Android/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="scsp">收藏商品</string>
-    <string name="sha">添加收货地址</string>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/Android/smssdk/unspecified/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/smssdk/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="smssdk_add_contact">添加</string>
     <string name="smssdk_back">返回 </string>
@@ -763,22 +696,185 @@
     <string name="smssdk_write_mobile_phone">请填写手机号码</string>
     <string name="smssdk_write_right_mobile_phone">请填写正确的手机号码</string>
     <string name="smssdk_your_ccount_is_verified">验证成功</string>
-    <!-- From: file:/E:/Android/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="sousuo">搜索</string>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="ssdk_alipay">支付宝好友</string>
+    <string name="ssdk_alipay_client_inavailable">目前您的支付宝版本过低或未安装，需要安装支付宝才能使用</string>
+    <string name="ssdk_baidutieba">百度贴吧</string>
+    <string name="ssdk_baidutieba_client_inavailable">目前您的百度贴吧版本过低或未安装，需要安装百度贴吧才能使用</string>
+    <string name="ssdk_bluetooth">蓝牙</string>
+    <string name="ssdk_douban">豆瓣</string>
+    <string name="ssdk_dropbox">Dropbox</string>
+    <string name="ssdk_email">邮件</string>
+    <string name="ssdk_evernote">印象笔记</string>
+    <string name="ssdk_facebook">Facebook</string>
+    <string name="ssdk_facebookmessenger">Facebook Messenger</string>
+    <string name="ssdk_flickr">Flickr</string>
+    <string name="ssdk_foursquare">FourSquare</string>
+    <string name="ssdk_google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="ssdk_googleplus">Google+</string>
+    <string name="ssdk_instagram">Instagram</string>
+    <string name="ssdk_instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
+    <string name="ssdk_instapager_email_or_password_incorrect">Email或密码不正确</string>
+    <!-- From: file:/G:/julegou/app/src/main/res/values/ssdk_instapaper_strings.xml -->
+    <eat-comment/>
+    <string formatted="false" name="ssdk_instapager_login_html"><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\">
+<meta content=\"width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no\" id=\"viewport\" name=\"viewport\">
+<meta content=\"yes\" name=\"apple-mobile-web-app-capable\">
+<title>%s</title>
+<style type=\"text/css\">
+body{margin:0;padding:0}
+.inputstyle {
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    width:100%%;
+    height:44px;
+    color:#000;
+    background:0;
+    border:0;
+    font-size:16px;
+    outline: none;
+    -webkit-appearance:none
+}
+
+.btn {
+    width:90%%;
+    height:44px;
+    line-height:44px;
+    background:#A0C035;
+    border:0;
+    border-radius:4px;
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+    margin-top:15px;
+    display:block
+}
+.btn:disabled {
+    background: #dddddd;
+}
+.error {
+    color:red;
+}
+</style>
+</head>
+
+<body>
+<script type=\"text/javascript\">
+function login(form){
+    var u=form[\"u\"].value,p=form[\"p\"].value;
+    if(!u || !p)
+        return false;
+    form[\"s\"].disabled = true;
+    return true;
+}
+</script>
+<form style=\"margin-top:45px;\" action=\"%s\" metho=\"get\" onsubmit=\"return login(this);\">
+%s
+<div style=\"padding-left:15px;border-top:1px solid #E3E3E5;border-bottom:1px solid #E3E3E5;\">
+ <input type=\"hidden\" name=\"ID_SIGN\" value=\"OWELJSFPWECSFEW\"/>
+ <input class=\"inputstyle\" id=\"u\" name=\"u\" type=\"text\" value=\"%s\" placeholder=\"%s\" style=\"border-bottom:1px solid #E3E3E5;\"/>
+ <input class=\"inputstyle\" id=\"p\" name=\"p\" type=\"password\" placeholder=\"%s\"/>
+</div>
+<p><input style=\"margin:0 auto;\" type=\"submit\" name=\"s\" value=\"  %s  \" class=\"btn\"/></p>
+</form>
+</body>
+</html>
+]]></string>
+    <!-- From: file:/G:/julegou/app/src/main/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="ssdk_instapaper">Instapaper</string>
+    <string name="ssdk_instapaper_email">邮箱</string>
+    <string name="ssdk_instapaper_login">登录</string>
+    <string name="ssdk_instapaper_logining">登录中…</string>
+    <string name="ssdk_instapaper_pwd">密码</string>
+    <string name="ssdk_kaixin">开心网</string>
+    <string name="ssdk_kakaostory">KakaoStory</string>
+    <string name="ssdk_kakaostory_client_inavailable">目前您的KakaoStory版本过低或未安装，需要安装KakaoStory才能使用</string>
+    <string name="ssdk_kakaotalk">KakaoTalk</string>
+    <string name="ssdk_kakaotalk_client_inavailable">目前您的KakaoTalk版本过低或未安装，需要安装KakaoTalk才能使用</string>
+    <string name="ssdk_laiwang">来往</string>
+    <string name="ssdk_laiwang_client_inavailable">目前您的来往版本过低或未安装，需要安装来往才能使用</string>
+    <string name="ssdk_laiwangmoments">来往动态</string>
+    <string name="ssdk_line">Line</string>
+    <string name="ssdk_line_client_inavailable">目前您的Line版本过低或未安装，需要安装Line才能使用</string>
+    <string name="ssdk_linkedin">领英</string>
+    <string name="ssdk_mingdao">明道</string>
+    <string name="ssdk_mingdao_share_content">网页分享</string>
+    <string name="ssdk_neteasemicroblog">网易微博</string>
+    <!-- From: file:/G:/julegou/app/src/main/res/values/ssdk_oks_strings.xml -->
+    <eat-comment/>
+    <string name="ssdk_oks_cancel">取消</string>
+    <string name="ssdk_oks_finish">完成</string>
+    <string name="ssdk_oks_list_friends">%s的朋友</string>
+    <string name="ssdk_oks_multi_share">图文分享</string>
+    <string name="ssdk_oks_pull_to_refresh">下拉刷新</string>
+    <string name="ssdk_oks_refreshing">刷新中…</string>
+    <string name="ssdk_oks_release_to_refresh">松开刷新</string>
+    <string name="ssdk_oks_select_a_friend">请选择一个朋友</string>
+    <string name="ssdk_oks_select_one_plat_at_least">请选择一个目标平台</string>
+    <string name="ssdk_oks_shake2share">摇晃手机！</string>
+    <string name="ssdk_oks_share">分享</string>
+    <string name="ssdk_oks_share_canceled">分享已取消</string>
+    <string name="ssdk_oks_share_completed">分享成功</string>
+    <string name="ssdk_oks_share_failed">分享失败</string>
+    <string name="ssdk_oks_share_to">分享到</string>
+    <string name="ssdk_oks_sharing">分享操作正在后台进行…</string>
+    <!-- From: file:/G:/julegou/app/src/main/res/values/ssdk_strings.xml -->
+    <eat-comment/>
+    <string name="ssdk_pinterest">Pinterest</string>
+    <string name="ssdk_pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
+    <string name="ssdk_pocket">Pocket</string>
+    <string name="ssdk_qq">QQ</string>
+    <string name="ssdk_qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="ssdk_qzone">QQ空间</string>
+    <string name="ssdk_renren">人人网</string>
+    <string name="ssdk_share_to_baidutieba">分享到百度贴吧</string>
+    <string name="ssdk_share_to_mingdao">分享到明道</string>
+    <string name="ssdk_share_to_qq">分享到QQ</string>
+    <string name="ssdk_share_to_qzone">分享到QQ空间</string>
+    <string name="ssdk_share_to_qzone_default">来自%s的分享</string>
+    <string name="ssdk_shortmessage">信息</string>
+    <string name="ssdk_sinaweibo">新浪微博</string>
+    <string name="ssdk_sohumicroblog">搜狐微博</string>
+    <string name="ssdk_sohusuishenkan">搜狐随身看</string>
+    <string name="ssdk_tencentweibo">腾讯微博</string>
+    <string name="ssdk_tumblr">Tumblr</string>
+    <string name="ssdk_twitter">Twitter</string>
+    <string name="ssdk_use_login_button">请改用“登录”按钮</string>
+    <string name="ssdk_vkontakte">VK</string>
+    <string name="ssdk_website">http://www.mob.com</string>
+    <string name="ssdk_wechat">微信好友</string>
+    <string name="ssdk_wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="ssdk_wechatfavorite">微信收藏</string>
+    <string name="ssdk_wechatmoments">微信朋友圈</string>
+    <string name="ssdk_weibo_oauth_regiseter">应用授权</string>
+    <string name="ssdk_weibo_upload_content">分享图片</string>
+    <string name="ssdk_whatsapp">WhatsApp</string>
+    <string name="ssdk_whatsapp_client_inavailable">目前您的WhatsApp版本过低或未安装，需要安装WhatsApp才能使用</string>
+    <string name="ssdk_yixin">易信</string>
+    <string name="ssdk_yixin_client_inavailable">目前您的易信版本过低或未安装，需要安装易信才能使用</string>
+    <string name="ssdk_yixinmoments">易信朋友圈</string>
+    <string name="ssdk_youdao">有道云笔记</string>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <!-- From: file:/E:/Android/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_certification">Certification</string>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <!-- From: file:/E:/Android/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/blue1</item>
@@ -788,7 +884,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- Customize your theme here. -->
     </style>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1725,19 +1821,19 @@
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
     </style>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/Android/smssdk/unspecified/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/smssdk/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="CommonDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@drawable/smssdk_dialog_bg</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/E:/Android/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/G:/julegou/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="MyActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <!--<item name="android:windowFullscreen" >true</item>-->
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/E:/Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
