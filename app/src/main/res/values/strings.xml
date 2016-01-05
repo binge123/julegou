@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">聚乐购</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_certification">Certification</string>
+    <string name="c_jiesuan">合计：</string>
+    <string name="c_money">¥ 0</string>
+    <string name="item_dian">店铺名</string>
+    <string name="item_bao">宝贝名</string>
+    <string name="item_jia">宝贝价格</string>
+    <string name="item_shu">X2</string>
+    <string name="sousuo">搜索</string>
+    <string name="gzdp">关注店铺</string>
+    <string name="scsp">收藏商品</string>
+</resources>

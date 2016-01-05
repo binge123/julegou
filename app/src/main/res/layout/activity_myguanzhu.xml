@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/zbg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff0030"
+        android:paddingTop="10dp"
+        android:id="@+id/mygz_rl"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的关注"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/mygz_rl2"
+        android:layout_below="@id/mygz_rl">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/gzdp"
+                android:id="@+id/mygz_dp"
+                android:gravity="center"
+                android:background="@drawable/radio_button_style2"
+                android:button="@null"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/mygz_sp"
+                android:background="@drawable/radio_button_style2"
+                android:button="@null"
+                android:text="@string/scsp"
+                android:layout_height="match_parent" />
+    </RadioGroup>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mygz_rl2"
+        android:id="@+id/gz_list"></ListView>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="#ECECEC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.amap.api.maps.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="240dp" />
+
+        <View
+        android:layout_below="@id/map"
+        android:background="#33000000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+        <View
+            android:id="@+id/view"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/map"
+            android:background="#33000000"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_below="@id/view"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附近商品"/>
+            <View
+                android:id="@+id/view1"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/textView"
+                android:background="#ECECEC"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+           <GridView
+               android:id="@+id/gridView"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:numColumns="2"
+               android:verticalSpacing="10dp"
+               android:horizontalSpacing="10dp"
+               android:stretchMode="columnWidth"
+               android:gravity="center"
+               android:layout_below="@id/view1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+           </GridView>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zbg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/g_jst"
+            android:fillViewport="false">
+            <com.best.utils.MyListViewForScollProblem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+
+            </com.best.utils.MyListViewForScollProblem>
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/g_jst"
+            android:background="#fff"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/c_jiesuan"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/c_money" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/c_money"
+                android:id="@+id/c_money"
+                android:textColor="@color/blue1"
+                android:layout_toLeftOf="@+id/c_js"
+                android:layout_marginRight="50dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="结账"
+            android:id="@+id/c_js"
+            android:textColor="#fff"
+            android:background="@color/anniu_bg"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
