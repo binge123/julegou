@@ -37,7 +37,7 @@ public class MyDingDanActivity extends Activity {
         views.add(daifa);
         views.add(daishou);
         views.add(daiping);
-
+        
         viewPager.setAdapter(new ViewPagerAdapter(views));
         viewPager.setCurrentItem(index < length ? index : length);
         pagerSlidingTabStrip.setViewPager(viewPager);
