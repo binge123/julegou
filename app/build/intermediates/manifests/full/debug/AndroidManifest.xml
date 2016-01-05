@@ -9,7 +9,6 @@
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <!-- 用于进行网络定位 -->
@@ -80,13 +79,6 @@
         </activity>
         <activity android:name="com.best.demo.julegou.MyMessageActivity" >
         </activity>
-        <activity android:name="com.best.demo.julegou.MyZLActivity" >
-        </activity>
-        <activity android:name="com.best.demo.julegou.AddSHAdActiviy" />
-        <activity android:name="com.best.demo.julegou.SHAddressActivity" />
-        <activity
-            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
-            android:configChanges="orientation|screenSize" />
     </application>
 
 </manifest>
