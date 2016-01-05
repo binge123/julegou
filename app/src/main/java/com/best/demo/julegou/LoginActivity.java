@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
@@ -26,6 +27,10 @@ public class LoginActivity extends BaseActivity{
     private void loginClick(View v){
         String zhang  = lgzhang.getText().toString();
         String ma  = lgma.getText().toString();
-        if ()
+        if (zhang.length()>6&&zhang.length()<18){
+            
+        }else{
+            Toast.makeText(this, "账号长度不正确", Toast.LENGTH_SHORT).show();
+        }
     }
 }
