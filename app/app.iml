@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":app" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="Android" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+<module external.linked.project.id=":app" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="julegou" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
@@ -73,9 +73,8 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dex-cache" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.bigkoo/pickerview/2.0.7/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/me.xiaopan/pagerslidingtabstrip/1.6.0/jars" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/org.xutils/xutils/3.1.24/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/org.xutils/xutils/3.1.22/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jacoco" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaResources" />
@@ -93,16 +92,36 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
+    <orderEntry type="library" exported="" name="ShareSDK-Wechat-Moments-2.6.5" level="project" />
+    <orderEntry type="library" exported="" name="nineoldandroids-2.4.0" level="project" />
+    <orderEntry type="library" exported="" name="ShareSDK-Wechat-2.6.5" level="project" />
+=======
     <orderEntry type="library" exported="" name="support-v4-23.1.1" level="project" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> develop
     <orderEntry type="library" exported="" name="picasso-2.4.0" level="project" />
+=======
+>>>>>>> parent of 1f7a35a... add grrenziliao
+=======
+>>>>>>> parent of 1f7a35a... add grrenziliao
     <orderEntry type="library" exported="" name="Android_Map_V2.7.20151124" level="project" />
+    <orderEntry type="library" exported="" name="xutils-3.1.24" level="project" />
+    <orderEntry type="library" exported="" name="ShareSDK-QQ-2.6.5" level="project" />
+    <orderEntry type="library" exported="" name="ShareSDK-Wechat-Favorite-2.6.5" level="project" />
+    <orderEntry type="library" exported="" name="ShareSDK-SinaWeibo-2.6.5" level="project" />
+    <orderEntry type="library" exported="" name="ShareSDK-TencentWeibo-2.6.5" level="project" />
+    <orderEntry type="library" exported="" name="ShareSDK-Wechat-Core-2.6.5" level="project" />
+    <orderEntry type="library" exported="" name="support-v4-23.1.1" level="project" />
+    <orderEntry type="library" exported="" name="ShareSDK-Email-2.6.5" level="project" />
     <orderEntry type="library" exported="" name="pagerslidingtabstrip-1.6.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.1.1" level="project" />
+    <orderEntry type="library" exported="" name="ShareSDK-Core-2.6.5" level="project" />
+    <orderEntry type="library" exported="" name="ShareSDK-QZone-2.6.5" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-23.1.1" level="project" />
+    <orderEntry type="library" exported="" name="xutils-3.1.22" level="project" />
     <orderEntry type="library" exported="" name="AMap_Location_V2.2.0_20151222" level="project" />
-    <orderEntry type="library" exported="" name="pickerview-2.0.7" level="project" />
-    <orderEntry type="library" exported="" name="xutils-3.1.24" level="project" />
     <orderEntry type="module" module-name="smssdk" exported="" />
-    <orderEntry type="module" module-name="multi-image-selector" exported="" />
   </component>
 </module>

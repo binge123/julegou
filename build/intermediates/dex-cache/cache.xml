@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="G:\julegou\app\build\intermediates\exploded-aar\com.bigkoo\pickerview\2.0.7\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="98d317749d5e0a353607bbc1b1e207dc8d2f6913">
+        <dex dex="G:\julegou\app\build\intermediates\pre-dexed\debug\classes-1e426eda492433549efa27cf37ac885d33b9e8a8.jar" />
+    </item>
+    <item
+        jar="C:\Users\dell2\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.4.0\f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2\picasso-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="G:\julegou\app\build\intermediates\pre-dexed\debug\picasso-2.4.0-925c0492aabc9b92863480e411a67b4eb97563fe.jar" />
+    </item>
+    <item
+        jar="G:\julegou\app\build\intermediates\exploded-aar\julegou\multi-image-selector\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="bc65479053ceb77bba54e9c8f6d14e2db7ceeb53">
+        <dex dex="G:\julegou\app\build\intermediates\pre-dexed\debug\classes-93c54ad78dcffd2fc55d0c984fd14a88a7b41698.jar" />
+    </item>
+
+</items>

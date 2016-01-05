@@ -11,15 +11,26 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
+import android.widget.ListView;
+
+import com.best.adapter.FirstListViewAdapter;
+import com.best.bean.FirstShops;
 import com.best.demo.julegou.R;
+import com.best.utils.HttpUtils;
 
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.xutils.common.Callback;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -29,15 +40,17 @@ import java.util.List;
 
 public class FirstFragment extends Fragment {
 
-
+    List<FirstShops> lists = new ArrayList<>();
     ViewPager vp;
     View v1,v2,v3;
     private ImageHandler handler = new ImageHandler(new WeakReference<FirstFragment>(this));
     List<View> list = new ArrayList<>();
-
+    GridView gv,gv1;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_first,container,false);
         vp = (ViewPager) v.findViewById(R.id.first_banner);
+        gv = (GridView) v.findViewById(R.id.xin_list);
+        gv1 = (GridView) v.findViewById(R.id.re_list);
         v1 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner1_layout,null);
         v2 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner2_layout,null);
         v3 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner3_layout,null);
@@ -46,6 +59,46 @@ public class FirstFragment extends Fragment {
         list.add(v2);
         list.add(v3);
         vp.setAdapter(new MyViewPager());
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                HashMap<String,String> map = new HashMap<>();
+                map.put("sql","select * from wst_goods");
+                HttpUtils.httpGetRequest(map, "/Api/exeQuery", new Callback.CommonCallback<String>() {
+                    @Override
+                    public void onSuccess(String s) {
+                        Log.i("jsons",s);
+                        try {
+                            JSONObject jsonObject = new JSONObject(s);
+                            JSONArray jsonArray  = jsonObject.getJSONArray("data");
+                            for(int i = 0;i < 6;i++){
+                                JSONObject object = jsonArray.getJSONObject(i);
+                                lists.add(new FirstShops(object.getString("goodsName"),object.getString("goodsSpec"),object.getString("shopPrice"),object.getString("goodsImg")));
+                            }
+                            gv.setAdapter(new FirstListViewAdapter(getContext(),lists));
+                            gv1.setAdapter(new FirstListViewAdapter(getContext(),lists));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+
+                    @Override
+                    public void onError(Throwable throwable, boolean b) {
+                    }
+
+                    @Override
+                    public void onCancelled(CancelledException e) {
+                    }
+
+                    @Override
+                    public void onFinished() {
+
+                    }
+                });
+
+            }
+        }).start();
         return v;
     }
     class MyViewPager extends PagerAdapter {

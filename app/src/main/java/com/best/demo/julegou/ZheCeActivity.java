@@ -21,11 +21,10 @@ import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
 
 import java.util.HashMap;
-import java.util.Map;
 
 import cn.smssdk.EventHandler;
 import cn.smssdk.SMSSDK;
-import cn.smssdk.gui.RegisterPage;
+
 
 /**
  * Created by Administrator on 2015/12/17.
@@ -39,12 +38,10 @@ public class ZheCeActivity extends BaseActivity {
     EditText yzm;
     @ViewInject(R.id.zhuce_mima)
     EditText password;
-
     HashMap<String,String> map = new HashMap<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //启动短信验证
         SMSSDK.initSDK(this, "da9170a37e88", "7ad0f84c0bdd803d6d9eb4ece05bf56f");
         EventHandler eh=new EventHandler(){
             @Override
@@ -57,17 +54,15 @@ public class ZheCeActivity extends BaseActivity {
             }
         };
         SMSSDK.registerEventHandler(eh);
-    }
+}
     @Event(value = R.id.zhuce_yan)
-     private void yanClink(View v){
-        Log.i("heheh","6666666");
+    public void yanEvent(View v){
         SMSSDK.getVerificationCode("86", username.getText().toString());
 
     }
     public void yanzheng(View v){
         if (!TextUtils.isEmpty(yzm.getText().toString())) {
             SMSSDK.submitVerificationCode("86", username.getText().toString(), yzm.getText().toString());
-            zhuce();
         } else {
             Toast.makeText(getApplicationContext(), "验证码不能为空", Toast.LENGTH_LONG).show();
         }

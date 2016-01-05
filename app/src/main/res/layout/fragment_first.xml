@@ -23,16 +23,14 @@
                 android:orientation="horizontal"
                 android:id="@+id/f_ln"
                 android:background="#FFF"
-                android:paddingTop="20dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp">
+                android:paddingTop="20dp">
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/fushi"
                         android:id="@+id/f_fushi"/>
@@ -49,8 +47,8 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/shuma"
                         android:id="@+id/f_shuma"/>
@@ -67,8 +65,8 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/shipin"
                         android:id="@+id/f_shipin"/>
@@ -85,8 +83,8 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/yule"
                         android:id="@+id/f_yule"/>
@@ -107,16 +105,14 @@
                 android:orientation="horizontal"
                 android:id="@+id/f_ln2"
                 android:paddingTop="5dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
                 android:paddingBottom="10dp">
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/jiaju"
                         android:id="@+id/f_jiaju"/>
@@ -133,8 +129,8 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/qiche"
                         android:id="@+id/f_qiche"/>
@@ -151,8 +147,8 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/zhubao"
                         android:id="@+id/f_zhubao"/>
@@ -169,8 +165,8 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content">
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/gengduo"
                         android:id="@+id/f_more"/>
@@ -209,14 +205,22 @@
                 android:background="#fff"
                 android:textColor="@color/f_zi"
                 android:layout_alignTop="@id/f_xin"/>
-            <com.best.utils.MyListViewForScollProblem
+            <com.best.weidget.MyGridView
+                android:scrollbars="none"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="30dp"
+                android:horizontalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/f_xin"
                 android:id="@+id/xin_list"
                 android:background="#fff">
 
-            </com.best.utils.MyListViewForScollProblem>
+            </com.best.weidget.MyGridView>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -241,14 +245,22 @@
                 android:background="#fff"
                 android:textColor="@color/f_zi"
                 android:layout_alignTop="@id/f_re"/>
-            <com.best.utils.MyListViewForScollProblem
+            <com.best.weidget.MyGridView
+                android:scrollbars="none"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="30dp"
+                android:horizontalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/f_re"
                 android:id="@+id/re_list"
                 android:background="#fff">
 
-            </com.best.utils.MyListViewForScollProblem>
+            </com.best.weidget.MyGridView>
         </RelativeLayout>
     </ScrollView>
 </FrameLayout>
