@@ -3,6 +3,7 @@
     package="com.best.demo.julegou" >
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <!--用于进行网络定位-->
@@ -81,6 +82,14 @@
         <activity android:name=".MyMessageActivity">
 
         </activity>
+        <activity android:name=".MyZLActivity">
+
+        </activity>
+        <activity android:name=".AddSHAdActiviy"></activity>
+        <activity android:name=".SHAddressActivity"></activity>
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity" />
     </application>
 
 </manifest>

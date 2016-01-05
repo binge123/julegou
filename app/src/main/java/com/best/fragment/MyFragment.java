@@ -7,15 +7,21 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.best.demo.julegou.LoginActivity;
 import com.best.demo.julegou.MyDingDanActivity;
 import com.best.demo.julegou.MyGuanZhuActivity;
 import com.best.demo.julegou.MyIntegralActivity;
 import com.best.demo.julegou.MyMessageActivity;
+import com.best.demo.julegou.MyZLActivity;
 import com.best.demo.julegou.MyZuJiActivity;
 import com.best.demo.julegou.R;
+import com.best.demo.julegou.ZheCeActivity;
+
+import me.nereo.multi_image_selector.bean.Image;
 
 /**
  * Created by dell2 on 2015/12/17.
@@ -23,6 +29,7 @@ import com.best.demo.julegou.R;
 public class MyFragment extends Fragment implements View.OnClickListener{
     LinearLayout line,line1,line2;
     RelativeLayout rel,rel1,rel2,rel3,rel4,rel5,rel6;
+    ImageView denglu,zhuce;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -34,7 +41,22 @@ public class MyFragment extends Fragment implements View.OnClickListener{
         rel4 = (RelativeLayout) v.findViewById(R.id.rel4);
         rel5 = (RelativeLayout) v.findViewById(R.id.rel5);
         rel6 = (RelativeLayout) v.findViewById(R.id.rel6);
-
+        zhuce = (ImageView) v.findViewById(R.id.zhuce);
+        denglu = (ImageView) v.findViewById(R.id.denglu);
+        denglu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), LoginActivity.class);
+                startActivity(i);
+            }
+        });
+        zhuce.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), ZheCeActivity.class);
+                startActivity(i);
+            }
+        });
         line = (LinearLayout) v.findViewById(R.id.daifaline);
         line1 = (LinearLayout) v.findViewById(R.id.daishouline);
         line2 = (LinearLayout) v.findViewById(R.id.daipingline);
@@ -72,7 +94,7 @@ public class MyFragment extends Fragment implements View.OnClickListener{
             startActivity(intent);
         }
         else if(vid == R.id.rel1){
-            Intent intent = new Intent(getActivity(), MyIntegralActivity.class);
+            Intent intent = new Intent(getActivity(), MyZLActivity.class);
             startActivity(intent);
         }
         else if(vid == R.id.rel2){

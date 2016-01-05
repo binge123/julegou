@@ -39,6 +39,7 @@
         android:layout_height="50dp"
         android:hint="请输入密码"
         android:background="#fff"
+        android:id="@+id/login_ma"
         android:theme="@style/Widget.AppCompat.EditText"
         android:layout_marginTop="5dp"
         android:layout_below="@id/login_zhang"
@@ -50,7 +51,7 @@
         android:text="登录"
         android:background="#ff0030"
         android:textColor="#fff"
-        android:id="@+id/button"
+        android:id="@+id/login_button"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 

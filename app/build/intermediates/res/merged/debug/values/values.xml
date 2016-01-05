@@ -306,6 +306,11 @@
     <!-- From: file:/G:/julegou/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="bai">#fff</color>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.bigkoo/pickerview/2.0.7/res/values/values.xml -->
+    <eat-comment/>
+    <color name="bgColor_overlay">#60000000</color>
+    <!-- From: file:/G:/julegou/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="blue1">#ff0030</color>
     <color name="blue2">#000000</color>
     <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
@@ -350,6 +355,17 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.bigkoo/pickerview/2.0.7/res/values/values.xml -->
+    <eat-comment/>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <eat-comment/>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -413,6 +429,7 @@
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/></declare-styleable>
     <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
+    <declare-styleable name="wheelview"><attr name="gravity"><enum name="center" value="17"/><enum name="left" value="3"/><enum name="right" value="5"/></attr><attr format="color" name="textColorOut"/><attr format="color" name="textColorCenter"/><attr format="color" name="dividerColor"/></declare-styleable>
     <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
@@ -493,14 +510,34 @@
     <!-- From: file:/G:/julegou/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="first_banner">120dp</dimen>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/multi-image-selector/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="folder_cover_size">72dp</dimen>
     <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/multi-image-selector/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="image_size">120dp</dimen>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.bigkoo/pickerview/2.0.7/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/multi-image-selector/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="space_size">2dp</dimen>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/smssdk/unspecified/res/values/values.xml -->
     <eat-comment/>
@@ -520,6 +557,11 @@
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.bigkoo/pickerview/2.0.7/res/values/values.xml -->
+    <eat-comment/>
+    <integer name="animation_default_duration">300</integer>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <eat-comment/>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -547,13 +589,38 @@
     <string name="app_name">聚乐购</string>
     <string name="c_jiesuan">合计：</string>
     <string name="c_money">¥ 0</string>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/multi-image-selector/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="folder_all">All Images</string>
+    <!-- From: file:/G:/julegou/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="gzdp">关注店铺</string>
     <string name="hello_world">Hello world!</string>
     <string name="item_bao">宝贝名</string>
     <string name="item_dian">店铺名</string>
     <string name="item_jia">宝贝价格</string>
     <string name="item_shu">X2</string>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/multi-image-selector/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="msg_amount_limit">Select images amount is limit</string>
+    <string name="msg_no_camera">No system camera found</string>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.bigkoo/pickerview/2.0.7/res/values/values.xml -->
+    <eat-comment/>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/multi-image-selector/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="preview">Preview</string>
+    <!-- From: file:/G:/julegou/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="scsp">收藏商品</string>
+    <string name="sha">添加收货地址</string>
     <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/smssdk/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="smssdk_add_contact">添加</string>
