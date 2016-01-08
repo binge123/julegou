@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/addbg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尹旭"
+            android:id="@+id/addada_name"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="35dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13843843838"
+            android:layout_alignParentRight="true"
+            android:id="@+id/addada_phone"
+            android:layout_alignTop="@id/addada_name"
+            android:layout_marginRight="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="山东省临沂市罗庄区小鬼子乡..."
+            android:layout_alignLeft="@id/addada_name"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/addada_add"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+</RelativeLayout>

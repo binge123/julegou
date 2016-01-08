@@ -4,7 +4,9 @@ package com.best.demo.julegou;
 
 import android.app.Activity;
 import android.os.Bundle;
+
 import android.view.View;
+<<<<<<< HEAD
 <<<<<<< HEAD
 import android.widget.EditText;
 import android.widget.Toast;
@@ -16,11 +18,21 @@ import org.xutils.view.annotation.Event;
 /**
  * Created by Administrator on 2015/12/16.
  */
+=======
+
+import android.widget.EditText;
+import android.widget.Toast;
+
+
+import org.xutils.view.annotation.Event;
+
+>>>>>>> binge_repositories
 public class LoginActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+<<<<<<< HEAD
     }
 <<<<<<< HEAD
     @Event(value = R.id.login_button)
@@ -32,6 +44,8 @@ public class LoginActivity extends Activity {
         }else{
             Toast.makeText(this, "账号长度不正确", Toast.LENGTH_SHORT).show();
         }
+=======
+>>>>>>> binge_repositories
     }
 =======
 

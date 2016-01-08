@@ -27,6 +27,13 @@ dependencies {
     compile 'me.xiaopan:pagerslidingtabstrip:1.6.0'
     compile files('libs/AMap_Location_V2.2.0_20151222.jar')
     compile project(':smssdk')
+<<<<<<< HEAD
     compile files('libs/picasso-2.4.0.jar')
     compile files('libs/nineoldandroids-2.4.0.jar')
+=======
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/Android_Map_V2.7.20151124.jar')
+    compile project(':multi-image-selector')
+    compile 'com.bigkoo:pickerview:2.0.7'
+>>>>>>> binge_repositories
 }

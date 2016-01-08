@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="pagerslidingtabstrip-1.6.0">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/me.xiaopan/pagerslidingtabstrip/1.6.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/me.xiaopan/pagerslidingtabstrip/1.6.0/res" />
+=======
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/me.xiaopan/pagerslidingtabstrip/1.6.0/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/me.xiaopan/pagerslidingtabstrip/1.6.0/jars/classes.jar!/" />
+>>>>>>> binge_repositories
     </CLASSES>
     <JAVADOC />
     <SOURCES />

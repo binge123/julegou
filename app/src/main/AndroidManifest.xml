@@ -81,6 +81,15 @@
         <activity android:name=".MyMessageActivity">
 
         </activity>
+<<<<<<< HEAD
+=======
+        <activity android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity">
+
+        </activity>
+        <activity android:name=".SHAActivity"></activity>
+        <activity android:name=".AddSHAActivity"></activity>
+        <activity android:name=".MyZLActivity"></activity>
+>>>>>>> binge_repositories
     </application>
 
 </manifest>
