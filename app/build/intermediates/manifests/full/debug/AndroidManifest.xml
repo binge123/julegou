@@ -79,6 +79,8 @@
         </activity>
         <activity android:name="com.best.demo.julegou.MyMessageActivity" >
         </activity>
+        <activity android:name="com.best.demo.julegou.ShopClassifyActivity" >
+        </activity>
     </application>
 
 </manifest>

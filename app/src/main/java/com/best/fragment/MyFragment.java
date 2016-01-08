@@ -7,9 +7,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.best.demo.julegou.LoginActivity;
 import com.best.demo.julegou.MyDingDanActivity;
 import com.best.demo.julegou.MyGuanZhuActivity;
 import com.best.demo.julegou.MyIntegralActivity;
@@ -23,6 +25,7 @@ import com.best.demo.julegou.R;
 public class MyFragment extends Fragment implements View.OnClickListener{
     LinearLayout line,line1,line2;
     RelativeLayout rel,rel1,rel2,rel3,rel4,rel5,rel6;
+    ImageView login_iv;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -34,7 +37,7 @@ public class MyFragment extends Fragment implements View.OnClickListener{
         rel4 = (RelativeLayout) v.findViewById(R.id.rel4);
         rel5 = (RelativeLayout) v.findViewById(R.id.rel5);
         rel6 = (RelativeLayout) v.findViewById(R.id.rel6);
-
+        login_iv = (ImageView) v.findViewById(R.id.img1);
         line = (LinearLayout) v.findViewById(R.id.daifaline);
         line1 = (LinearLayout) v.findViewById(R.id.daishouline);
         line2 = (LinearLayout) v.findViewById(R.id.daipingline);
@@ -49,6 +52,7 @@ public class MyFragment extends Fragment implements View.OnClickListener{
         line.setOnClickListener(this);
         line1.setOnClickListener(this);
         line2.setOnClickListener(this);
+        login_iv.setOnClickListener(this);
         return v;
     }
 
@@ -93,6 +97,9 @@ public class MyFragment extends Fragment implements View.OnClickListener{
         }
         else if(vid == R.id.rel6){
             Intent intent = new Intent(getActivity(), MyIntegralActivity.class);
+            startActivity(intent);
+        }else if (vid == R.id.img1){
+            Intent intent = new Intent(getActivity(), LoginActivity.class);
             startActivity(intent);
         }
     }

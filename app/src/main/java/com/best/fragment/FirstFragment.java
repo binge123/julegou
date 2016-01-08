@@ -1,5 +1,6 @@
 package com.best.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.Nullable;
@@ -13,10 +14,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 
 import com.best.adapter.FirstListViewAdapter;
 import com.best.bean.FirstShops;
 import com.best.demo.julegou.R;
+import com.best.demo.julegou.ShopClassifyActivity;
 import com.best.utils.HttpUtils;
 
 
@@ -46,11 +49,14 @@ public class FirstFragment extends Fragment {
     private ImageHandler handler = new ImageHandler(new WeakReference<FirstFragment>(this));
     List<View> list = new ArrayList<>();
     GridView gv,gv1;
+    RelativeLayout rl;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_first,container,false);
         vp = (ViewPager) v.findViewById(R.id.first_banner);
         gv = (GridView) v.findViewById(R.id.xin_list);
         gv1 = (GridView) v.findViewById(R.id.re_list);
+        rl = (RelativeLayout) v.findViewById(R.id.more);
+
         v1 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner1_layout,null);
         v2 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner2_layout,null);
         v3 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner3_layout,null);
@@ -99,6 +105,13 @@ public class FirstFragment extends Fragment {
 
             }
         }).start();
+        rl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ShopClassifyActivity.class);
+                startActivity(intent);
+            }
+        });
         return v;
     }
     class MyViewPager extends PagerAdapter {
