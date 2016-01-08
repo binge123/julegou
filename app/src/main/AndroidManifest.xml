@@ -81,6 +81,12 @@
         <activity android:name=".MyMessageActivity">
 
         </activity>
+        <activity android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity">
+
+        </activity>
+        <activity android:name=".SHAActivity"></activity>
+        <activity android:name=".AddSHAActivity"></activity>
+        <activity android:name=".MyZLActivity"></activity>
     </application>
 
 </manifest>

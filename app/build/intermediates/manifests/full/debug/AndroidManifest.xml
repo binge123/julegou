@@ -79,6 +79,11 @@
         </activity>
         <activity android:name="com.best.demo.julegou.MyMessageActivity" >
         </activity>
+        <activity android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity" >
+        </activity>
+        <activity android:name="com.best.demo.julegou.SHAActivity" />
+        <activity android:name="com.best.demo.julegou.AddSHAActivity" />
+        <activity android:name="com.best.demo.julegou.MyZLActivity" />
     </application>
 
 </manifest>

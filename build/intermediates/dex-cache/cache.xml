@@ -2,25 +2,32 @@
 <items version="2" >
 
     <item
-        jar="G:\julegou\app\build\intermediates\exploded-aar\com.bigkoo\pickerview\2.0.7\jars\classes.jar"
+        jar="E:\Android\app\build\intermediates\exploded-aar\Android\multi-image-selector\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2e9b753df861b7e4742d5535bc175c820695a1e2">
+        <dex dex="E:\Android\app\build\intermediates\pre-dexed\debug\classes-286ecb2f8ca60638396c5a2de07d2e4b02a4757b.jar" />
+    </item>
+    <item
+        jar="E:\Android\app\build\intermediates\exploded-aar\org.xutils\xutils\3.1.26\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a855623454a087d74638150ebaf4095f8596e4e2">
+        <dex dex="E:\Android\app\build\intermediates\pre-dexed\debug\classes-91d7d6fe2f55c104b1aab69db47fd60fe6636e3c.jar" />
+    </item>
+    <item
+        jar="E:\Android\app\build\intermediates\exploded-aar\com.bigkoo\pickerview\2.0.7\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="98d317749d5e0a353607bbc1b1e207dc8d2f6913">
-        <dex dex="G:\julegou\app\build\intermediates\pre-dexed\debug\classes-1e426eda492433549efa27cf37ac885d33b9e8a8.jar" />
+        <dex dex="E:\Android\app\build\intermediates\pre-dexed\debug\classes-e129b6494a77f728e010a30de4750f5df1e9a2ef.jar" />
     </item>
     <item
-        jar="C:\Users\dell2\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.4.0\f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2\picasso-2.4.0.jar"
+        jar="C:\Users\Administrator.WIN-OU8RQGJIKK8\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.4.0\f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2\picasso-2.4.0.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
-        <dex dex="G:\julegou\app\build\intermediates\pre-dexed\debug\picasso-2.4.0-925c0492aabc9b92863480e411a67b4eb97563fe.jar" />
-    </item>
-    <item
-        jar="G:\julegou\app\build\intermediates\exploded-aar\julegou\multi-image-selector\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="bc65479053ceb77bba54e9c8f6d14e2db7ceeb53">
-        <dex dex="G:\julegou\app\build\intermediates\pre-dexed\debug\classes-93c54ad78dcffd2fc55d0c984fd14a88a7b41698.jar" />
+        <dex dex="E:\Android\app\build\intermediates\pre-dexed\debug\picasso-2.4.0-ef5c7589c43f58f6b63d8b5252cb4658021383b4.jar" />
     </item>
 
 </items>

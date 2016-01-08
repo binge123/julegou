@@ -14,6 +14,7 @@ import com.best.demo.julegou.MyDingDanActivity;
 import com.best.demo.julegou.MyGuanZhuActivity;
 import com.best.demo.julegou.MyIntegralActivity;
 import com.best.demo.julegou.MyMessageActivity;
+import com.best.demo.julegou.MyZLActivity;
 import com.best.demo.julegou.MyZuJiActivity;
 import com.best.demo.julegou.R;
 
@@ -72,7 +73,7 @@ public class MyFragment extends Fragment implements View.OnClickListener{
             startActivity(intent);
         }
         else if(vid == R.id.rel1){
-            Intent intent = new Intent(getActivity(), MyIntegralActivity.class);
+            Intent intent = new Intent(getActivity(), MyZLActivity.class);
             startActivity(intent);
         }
         else if(vid == R.id.rel2){
