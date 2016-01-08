@@ -3,6 +3,7 @@
 
     <item
 <<<<<<< HEAD
+<<<<<<< HEAD
         jar="G:\julegou\app\build\intermediates\exploded-aar\com.bigkoo\pickerview\2.0.7\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -50,6 +51,13 @@
         sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
         <dex dex="E:\Android\app\build\intermediates\pre-dexed\debug\picasso-2.4.0-ef5c7589c43f58f6b63d8b5252cb4658021383b4.jar" />
 >>>>>>> binge_repositories
+=======
+        jar="G:\julegou\app\build\intermediates\exploded-aar\org.xutils\xutils\3.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="054078def32dcafc1c4172dcfc464c96dbe3c510">
+        <dex dex="G:\julegou\app\build\intermediates\pre-dexed\debug\classes-55b2058505315e46dc5773dc9d3a8d6fb5d097b0.jar" />
+>>>>>>> xuxu_repositories
     </item>
 
 </items>

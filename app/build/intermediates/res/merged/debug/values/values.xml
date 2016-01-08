@@ -331,6 +331,7 @@
     <color name="foreground_material_light">@android:color/black</color>
     <!-- From: file:/G:/julegou/app/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <color name="fz">#f2f2f2</color>
     <color name="green">#FD87A9</color>
     <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
@@ -501,6 +502,11 @@
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
+    <!-- From: file:/G:/julegou/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="wordsize">16sp</dimen>
+    <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <!-- From: file:/G:/julegou/app/build/intermediates/exploded-aar/julegou/smssdk/unspecified/res/values/values.xml -->
     <eat-comment/>

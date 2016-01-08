@@ -35,6 +35,7 @@
         android:id="@+id/login_zhang"
         android:paddingLeft="20dp"/>
     <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="请输入密码"

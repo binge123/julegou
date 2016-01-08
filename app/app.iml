@@ -74,7 +74,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/me.xiaopan/pagerslidingtabstrip/1.6.0/jars" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/org.xutils/xutils/3.1.22/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/org.xutils/xutils/3.2.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jacoco" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaResources" />
@@ -92,10 +92,10 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-<<<<<<< HEAD
     <orderEntry type="library" exported="" name="ShareSDK-Wechat-Moments-2.6.5" level="project" />
     <orderEntry type="library" exported="" name="nineoldandroids-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-Wechat-2.6.5" level="project" />
+<<<<<<< HEAD
 =======
     <orderEntry type="library" exported="" name="support-v4-23.1.1" level="project" />
 <<<<<<< HEAD
@@ -115,8 +115,10 @@
 =======
 >>>>>>> parent of 1f7a35a... add grrenziliao
 >>>>>>> binge_repositories
+=======
+    <orderEntry type="library" exported="" name="picasso-2.4.0" level="project" />
+>>>>>>> xuxu_repositories
     <orderEntry type="library" exported="" name="Android_Map_V2.7.20151124" level="project" />
-    <orderEntry type="library" exported="" name="xutils-3.1.24" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-QQ-2.6.5" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-Wechat-Favorite-2.6.5" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-SinaWeibo-2.6.5" level="project" />
@@ -124,12 +126,12 @@
     <orderEntry type="library" exported="" name="ShareSDK-Wechat-Core-2.6.5" level="project" />
     <orderEntry type="library" exported="" name="support-v4-23.1.1" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-Email-2.6.5" level="project" />
+    <orderEntry type="library" exported="" name="xutils-3.2.0" level="project" />
     <orderEntry type="library" exported="" name="pagerslidingtabstrip-1.6.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.1.1" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-Core-2.6.5" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-QZone-2.6.5" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-23.1.1" level="project" />
-    <orderEntry type="library" exported="" name="xutils-3.1.22" level="project" />
     <orderEntry type="library" exported="" name="AMap_Location_V2.2.0_20151222" level="project" />
     <orderEntry type="module" module-name="smssdk" exported="" />
   </component>

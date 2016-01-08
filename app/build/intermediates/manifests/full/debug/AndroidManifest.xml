@@ -80,6 +80,7 @@
         <activity android:name="com.best.demo.julegou.MyMessageActivity" >
         </activity>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <activity android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity" >
         </activity>
@@ -87,6 +88,10 @@
         <activity android:name="com.best.demo.julegou.AddSHAActivity" />
         <activity android:name="com.best.demo.julegou.MyZLActivity" />
 >>>>>>> binge_repositories
+=======
+        <activity android:name="com.best.demo.julegou.ShopClassifyActivity" >
+        </activity>
+>>>>>>> xuxu_repositories
     </application>
 
 </manifest>

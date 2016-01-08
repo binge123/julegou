@@ -82,6 +82,7 @@
 
         </activity>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <activity android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity">
 
@@ -90,6 +91,11 @@
         <activity android:name=".AddSHAActivity"></activity>
         <activity android:name=".MyZLActivity"></activity>
 >>>>>>> binge_repositories
+=======
+        <activity android:name=".ShopClassifyActivity">
+
+        </activity>
+>>>>>>> xuxu_repositories
     </application>
 
 </manifest>
