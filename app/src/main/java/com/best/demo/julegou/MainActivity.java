@@ -15,7 +15,6 @@ import com.best.fragment.SearchFragment;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
 
-import cn.smssdk.SMSSDK;
 
 @ContentView(R.layout.activity_main)
 public class MainActivity extends BaseActivity implements View.OnClickListener{

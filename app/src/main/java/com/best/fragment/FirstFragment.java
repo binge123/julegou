@@ -1,9 +1,10 @@
 package com.best.fragment;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Message;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.os.Handler;
 import android.support.v4.view.PagerAdapter;
@@ -12,14 +13,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ListView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.best.adapter.FirstListViewAdapter;
 import com.best.bean.FirstShops;
+import com.best.demo.julegou.ClassiftActivity;
 import com.best.demo.julegou.R;
-import com.best.demo.julegou.ShopClassifyActivity;
+import com.best.demo.julegou.ShopDetailsActivity;
 import com.best.utils.HttpUtils;
 
 
@@ -27,9 +30,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.xutils.common.Callback;
-import org.xutils.view.annotation.ContentView;
-import org.xutils.view.annotation.ViewInject;
-import org.xutils.x;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -43,77 +43,102 @@ import java.util.List;
 
 public class FirstFragment extends Fragment {
 
-    List<FirstShops> lists = new ArrayList<>();
-    ViewPager vp;
-    View v1,v2,v3;
+    private List<FirstShops> lists = new ArrayList<>();
+    private ViewPager vp;
+    private View v1,v2,v3;
     private ImageHandler handler = new ImageHandler(new WeakReference<FirstFragment>(this));
-    List<View> list = new ArrayList<>();
-    GridView gv,gv1;
-    RelativeLayout rl;
+    private List<View> list = new ArrayList<>();
+    private GridView gv;
+    private RelativeLayout rl;
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_first,container,false);
         vp = (ViewPager) v.findViewById(R.id.first_banner);
         gv = (GridView) v.findViewById(R.id.xin_list);
-        gv1 = (GridView) v.findViewById(R.id.re_list);
         rl = (RelativeLayout) v.findViewById(R.id.more);
 
         v1 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner1_layout,null);
         v2 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner2_layout,null);
         v3 =LayoutInflater.from(getActivity()).inflate(R.layout.first_banner3_layout,null);
+
         handler.sendEmptyMessageDelayed(ImageHandler.MSG_UPDATE_IMAGE, ImageHandler.MSG_DELAY);
+
         list.add(v1);
         list.add(v2);
         list.add(v3);
+
         vp.setAdapter(new MyViewPager());
-        new Thread(new Runnable() {
+
+        //首页获取数据
+        HashMap<String,String> map = new HashMap<>();
+        map.put("sql", "select * from wst_goods");
+        HttpUtils.httpGetRequest(map, "/Api/exeQuery", new Callback.CommonCallback<String>() {
             @Override
-            public void run() {
-                HashMap<String,String> map = new HashMap<>();
-                map.put("sql","select * from wst_goods");
-                HttpUtils.httpGetRequest(map, "/Api/exeQuery", new Callback.CommonCallback<String>() {
-                    @Override
-                    public void onSuccess(String s) {
-                        Log.i("jsons",s);
-                        try {
-                            JSONObject jsonObject = new JSONObject(s);
-                            JSONArray jsonArray  = jsonObject.getJSONArray("data");
-                            for(int i = 0;i < 6;i++){
-                                JSONObject object = jsonArray.getJSONObject(i);
-                                lists.add(new FirstShops(object.getString("goodsName"),object.getString("goodsSpec"),object.getString("shopPrice"),object.getString("goodsImg")));
-                            }
-                            gv.setAdapter(new FirstListViewAdapter(getContext(),lists));
-                            gv1.setAdapter(new FirstListViewAdapter(getContext(),lists));
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-
+            public void onSuccess(String s) {
+                Log.i("jsons", s);
+                try {
+                    JSONObject jsonObject = new JSONObject(s);
+                    JSONArray jsonArray = jsonObject.getJSONArray("data");
+                    for (int i = 0; i < 6; i++) {
+                        JSONObject object = jsonArray.getJSONObject(i);
+                        lists.add(new FirstShops(object.getString("goodsName"), object.getString("marketPrice"), object.getString("shopPrice"), object.getString("goodsThums"),object.getString("shopId"),object.getString("goodsId"),object.getString("goodsStock")));
                     }
-
-                    @Override
-                    public void onError(Throwable throwable, boolean b) {
-                    }
-
-                    @Override
-                    public void onCancelled(CancelledException e) {
-                    }
-
-                    @Override
-                    public void onFinished() {
-
-                    }
-                });
+                    gv.setAdapter(new FirstListViewAdapter(getContext(), lists));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
 
             }
-        }).start();
+
+            @Override
+            public void onError(Throwable throwable, boolean b) {
+            }
+
+            @Override
+            public void onCancelled(CancelledException e) {
+            }
+
+            @Override
+            public void onFinished() {
+
+            }
+        });
+        //girdview点击事件
+        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Log.i("goodsid",lists.get(position).getGoodsid());
+                SharedPreferences sp = getActivity().getSharedPreferences("content", Activity.MODE_PRIVATE);
+                SharedPreferences.Editor  editor = sp.edit();
+                editor.putString("goodsname",lists.get(position).getGoodsName());
+                editor.putString("marketprice",lists.get(position).getMarketprice());
+                editor.putString("shopprice",lists.get(position).getShopPrice());
+                editor.putString("shopid",lists.get(position).getShopid());
+                editor.putString("goodsid",lists.get(position).getGoodsid());
+                editor.putString("goodsstock",lists.get(position).getGoodsStock());
+                editor.commit();
+                //跳转事件
+                Intent intent = new Intent(getActivity(), ShopDetailsActivity.class);
+//                intent.putExtra("goodsname",lists.get(position).getGoodsName());
+//                intent.putExtra("marketprice",lists.get(position).getMarketprice());
+//                intent.putExtra("shopprice",lists.get(position).getShopPrice());
+//                intent.putExtra("shopid",lists.get(position).getShopid());
+//                intent.putExtra("goodsid",lists.get(position).getGoodsid());
+                startActivity(intent);
+            }
+        });
+        //更多点击事件
         rl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ShopClassifyActivity.class);
+                Intent intent = new Intent(getActivity(), ClassiftActivity.class);
                 startActivity(intent);
             }
         });
         return v;
     }
+    //banner
     class MyViewPager extends PagerAdapter {
 
         @Override

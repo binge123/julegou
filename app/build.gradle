@@ -29,4 +29,8 @@ dependencies {
     compile project(':smssdk')
     compile files('libs/picasso-2.4.0.jar')
     compile files('libs/nineoldandroids-2.4.0.jar')
+    compile project(':waterrefash')
+    compile 'in.srain.cube:grid-view-with-header-footer:1.0.12'
+    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    compile project(':flowlayout-lib')
 }

@@ -25,7 +25,7 @@
             android:paddingLeft="5dp"
             android:textColor="#fff"
             android:gravity="center_vertical"
-            android:background="@drawable/search"
+            android:background="@drawable/searchs"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/search"
             android:layout_toRightOf="@id/s_back"

@@ -234,19 +234,19 @@
                     android:text="188"
                     android:textSize="18sp" />
             </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:gravity="center"
-                android:layout_alignParentBottom="true"
-                android:background="#ff0030">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="确定"
-                    android:textSize="20sp"
-                    android:textColor="#FFF"/>
-            </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="#ff0030">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="20sp"
+            android:textColor="#FFF"/>
+    </RelativeLayout>
 </RelativeLayout>

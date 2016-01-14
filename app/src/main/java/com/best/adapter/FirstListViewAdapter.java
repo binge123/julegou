@@ -54,9 +54,9 @@ public class FirstListViewAdapter extends BaseAdapter {
         }else {
             holder = (ViewHolder) convertView.getTag();
         }
-        Picasso.with(context).load(list.get(position).getGoodsImg()).into(holder.iv);
+//        Picasso.with(context).load(list.get(position).getGoodsImg()).into(holder.iv);
         holder.tv1.setText(list.get(position).getGoodsName());
-        holder.tv2.setText(list.get(position).getGoodsSpec());
+        holder.tv2.setText(list.get(position).getMarketprice());
         holder.tv3.setText(list.get(position).getShopPrice());
         return convertView;
     }

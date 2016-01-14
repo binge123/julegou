@@ -5,18 +5,24 @@ package com.best.bean;
  */
 public class FirstShops {
     private String goodsName;
-    private String goodsSpec;
+    private String marketPrice;
     private String shopPrice;
     private String goodsImg;
+    private String shopid;
+    private String goodsid;
+    private String goodsStock;
 
     public FirstShops() {
     }
 
-    public FirstShops(String goodsName, String goodsSpec, String shopPrice, String goodsImg) {
+    public FirstShops(String goodsName, String marketPrice, String shopPrice, String goodsImg,String shopid,String goodsid,String goodsStock) {
         this.goodsName = goodsName;
-        this.goodsSpec = goodsSpec;
+        this.marketPrice = marketPrice;
         this.shopPrice = shopPrice;
         this.goodsImg = goodsImg;
+        this.shopid = shopid;
+        this.goodsid = goodsid;
+        this.goodsStock = goodsStock;
     }
 
     public String getGoodsName() {
@@ -27,13 +33,6 @@ public class FirstShops {
         this.goodsName = goodsName;
     }
 
-    public String getGoodsSpec() {
-        return goodsSpec;
-    }
-
-    public void setGoodsSpec(String goodsSpec) {
-        this.goodsSpec = goodsSpec;
-    }
 
     public String getShopPrice() {
         return shopPrice;
@@ -49,5 +48,37 @@ public class FirstShops {
 
     public void setGoodsImg(String goodsImg) {
         this.goodsImg = goodsImg;
+    }
+
+    public String getMarketprice() {
+        return marketPrice;
+    }
+
+    public void setMarketprice(String marketprice) {
+        this.marketPrice = marketprice;
+    }
+
+    public String getGoodsid() {
+        return goodsid;
+    }
+
+    public void setGoodsid(String goodsid) {
+        this.goodsid = goodsid;
+    }
+
+    public String getShopid() {
+        return shopid;
+    }
+
+    public void setShopid(String shopid) {
+        this.shopid = shopid;
+    }
+
+    public String getGoodsStock() {
+        return goodsStock;
+    }
+
+    public void setGoodsStock(String goodsStock) {
+        this.goodsStock = goodsStock;
     }
 }
