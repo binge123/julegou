@@ -47,6 +47,7 @@ public class ShopDetailsActivity extends BaseActivity implements View.OnClickLis
             ftt.add(R.id.fragment_parent,ff,"radioButton1");
             ftt.commit();
         }
+
     }
 
     @Override

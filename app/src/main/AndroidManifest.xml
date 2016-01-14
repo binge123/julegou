@@ -24,7 +24,7 @@
     <application
         android:name="com.best.utils.MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <service android:name="com.amap.api.location.APSService"></service>
@@ -93,6 +93,18 @@
 >>>>>>> binge_repositories
 =======
         <activity android:name=".ShopClassifyActivity">
+
+        </activity>
+<<<<<<< HEAD
+>>>>>>> xuxu_repositories
+=======
+        <activity android:name=".PaymentActivity">
+
+        </activity>
+        <activity android:name=".FenLeiActivity">
+
+        </activity>
+        <activity android:name=".ClassiftActivity">
 
         </activity>
 >>>>>>> xuxu_repositories

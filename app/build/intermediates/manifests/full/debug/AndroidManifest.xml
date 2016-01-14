@@ -32,7 +32,7 @@
         android:name="com.best.utils.MyApplication"
         android:allowBackup="true"
         android:debuggable="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <service android:name="com.amap.api.location.APSService" />
@@ -90,6 +90,15 @@
 >>>>>>> binge_repositories
 =======
         <activity android:name="com.best.demo.julegou.ShopClassifyActivity" >
+        </activity>
+<<<<<<< HEAD
+>>>>>>> xuxu_repositories
+=======
+        <activity android:name="com.best.demo.julegou.PaymentActivity" >
+        </activity>
+        <activity android:name="com.best.demo.julegou.FenLeiActivity" >
+        </activity>
+        <activity android:name="com.best.demo.julegou.ClassiftActivity" >
         </activity>
 >>>>>>> xuxu_repositories
     </application>

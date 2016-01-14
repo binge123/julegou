@@ -1,1 +1,1 @@
-include ':app', ':smssdk'
+include ':app', ':smssdk', ':waterrefash', ':flowlayout-lib'

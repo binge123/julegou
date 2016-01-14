@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
 
+import com.ToxicBakery.viewpager.transforms.RotateUpTransformer;
 import com.best.utils.CubeTransformer;
 
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ public class YinDaoActivity extends Activity {
     List<View> list  = new ArrayList<>();
     List<RadioButton> rbs= new ArrayList<>();
     View v1,v2,v3;
-    RadioButton rb1,rb2,rb3;
+//    RadioButton rb1,rb2,rb3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,17 +39,17 @@ public class YinDaoActivity extends Activity {
         v1 = LayoutInflater.from(this).inflate(R.layout.viewpagelayout1,null);
         v2 = LayoutInflater.from(this).inflate(R.layout.viewpagelayout2,null);
         v3 = LayoutInflater.from(this).inflate(R.layout.viewpagelayout3,null);
-        rb1 = (RadioButton) findViewById(R.id.page1);
-        rb2 = (RadioButton) findViewById(R.id.page2);
-        rb3 = (RadioButton) findViewById(R.id.page3);
-        rb1.setChecked(true);
-        rbs.add(rb1);
-        rbs.add(rb2);
-        rbs.add(rb3);
+//        rb1 = (RadioButton) findViewById(R.id.page1);
+//        rb2 = (RadioButton) findViewById(R.id.page2);
+//        rb3 = (RadioButton) findViewById(R.id.page3);
+//        rb1.setChecked(true);
+//        rbs.add(rb1);
+//        rbs.add(rb2);
+//        rbs.add(rb3);
         list.add(v1);
         list.add(v2);
         list.add(v3);
-        viewPager.setPageTransformer(true,new CubeTransformer());
+        viewPager.setPageTransformer(true,new RotateUpTransformer());
         viewPager.setAdapter(new MyAdapter());
 
     }

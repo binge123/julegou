@@ -12,4 +12,10 @@
     <string name="sousuo">搜索</string>
     <string name="gzdp">关注店铺</string>
     <string name="scsp">收藏商品</string>
+    <!--分类-->
+    <string name="search_hint">请输入搜索内容</string>
+    <string name="exit">注销</string>
+    <string name="typetext">分类</string>
+    <string name="saotext">扫啊扫</string>
+
 </resources>
