@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         jar="G:\julegou\app\build\intermediates\exploded-aar\com.bigkoo\pickerview\2.0.7\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -65,6 +66,13 @@
         revision="23.0.2"
         sha1="5fa5484f9570c6392ab648357ed0728d23e92813">
         <dex dex="G:\julegou\app\build\intermediates\pre-dexed\debug\classes-8343ef16f237c8939dd0c1516d4854be137d323a.jar" />
+>>>>>>> xuxu_repositories
+=======
+        jar="G:\julegou\app\build\intermediates\exploded-aar\com.github.nicolasjafelle\paginggridview\1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e399da3b4b2d6fb8babb5e12a38873b946f7d3bb">
+        <dex dex="G:\julegou\app\build\intermediates\pre-dexed\debug\classes-8442a7f6db9721f2e63f8af30326a5f708bbbadc.jar" />
 >>>>>>> xuxu_repositories
     </item>
 

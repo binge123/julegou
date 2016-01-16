@@ -4,6 +4,7 @@
     <modules>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/julegou.iml" filepath="$PROJECT_DIR$/julegou.iml" />
 =======
@@ -14,6 +15,13 @@
       <module fileurl="file://$PROJECT_DIR$/smssdk/smssdk.iml" filepath="$PROJECT_DIR$/smssdk/smssdk.iml" />
 =======
       <module fileurl="file://$PROJECT_DIR$/julegou.iml" filepath="$PROJECT_DIR$/julegou.iml" />
+>>>>>>> xuxu_repositories
+=======
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flowlayout-lib/flowlayout-lib.iml" filepath="$PROJECT_DIR$/flowlayout-lib/flowlayout-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/julegou.iml" filepath="$PROJECT_DIR$/julegou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smssdk/smssdk.iml" filepath="$PROJECT_DIR$/smssdk/smssdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/waterrefash/waterrefash.iml" filepath="$PROJECT_DIR$/waterrefash/waterrefash.iml" />
 >>>>>>> xuxu_repositories
     </modules>
   </component>

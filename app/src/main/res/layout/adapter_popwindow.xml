@@ -1,8 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:zhy="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
     android:orientation="vertical">
 
@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:background="@color/bai"
         android:orientation="horizontal" >
 
         <ImageView
@@ -17,85 +18,70 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
             android:layout_marginLeft="10dp"
-            android:text="￥49.00   库存750"
+            android:background="@color/blue2"/>
 
-            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="￥"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="49.00"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="   库存: "
 
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="750"
+
+                android:textSize="18sp" />
+        </LinearLayout>
         <ImageView
             android:id="@+id/pop_del"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:padding="10dp"
-            />
+            android:padding="10dp"/>
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="260dp" 
-        android:layout_marginTop="10dp">
+        android:layout_height="260dp"
+        android:layout_marginTop="10dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/line_comm"
             android:orientation="vertical" >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="15dp"
-                android:text="类型" />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#ECECEC"/>
-            <com.best.weidget.XCFlowLayout
-                android:id="@+id/flowlayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
 
-            </com.best.weidget.XCFlowLayout>
             <!--<com.zhy.view.flowlayout.TagFlowLayout-->
                 <!--android:id="@+id/id_flowlayout"-->
                 <!--zhy:max_select="-1"-->
                 <!--android:layout_width="fill_parent"-->
                 <!--android:layout_height="wrap_content"-->
-                <!--android:background="@drawable/liushi_select"-->
                 <!--android:padding="20dp">-->
             <!--</com.zhy.view.flowlayout.TagFlowLayout>-->
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="15dp"
-                android:text="颜色" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                 android:background="#ECECEC"/>
-
-            <com.zhy.view.flowlayout.TagFlowLayout
-                android:id="@+id/id_flowlayouts"
-                zhy:max_select="-1"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/liushi_select"
-                android:padding="20dp">
-            </com.zhy.view.flowlayout.TagFlowLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-               />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -132,26 +118,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                     android:paddingTop="10dp"
+                    android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:paddingLeft="13dp"
                     android:paddingRight="13dp"
-
-
                     android:text="+" />
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#ECECEC"/>
-
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
         </LinearLayout>
     </ScrollView>
 
-    <TextView 
+
+    <TextView
         android:id="@+id/pop_ok"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -159,6 +147,11 @@
         android:paddingBottom="10dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:text="确定"/>
-    
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="确定"
+        android:textColor="@color/bai"
+        android:background="@color/f_zi">
+    </TextView>
+
 </LinearLayout>

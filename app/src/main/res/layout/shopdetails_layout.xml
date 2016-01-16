@@ -17,12 +17,10 @@
         <RadioGroup
             android:id="@+id/rg"
             android:background="#ff0030"
+            android:gravity="center"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true">
-
+            android:layout_height="wrap_content">
             <RadioButton
                 android:id="@+id/radioButton1"
                 android:layout_width="0dp"
@@ -53,7 +51,11 @@
                 android:button="@null"
                 android:textSize="20sp"
                 android:layout_weight="1"/>
-
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:background="@drawable/gouwuche"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
         </RadioGroup>
 
     </LinearLayout>
