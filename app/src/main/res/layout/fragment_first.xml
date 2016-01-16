@@ -496,7 +496,7 @@
                 android:stretchMode="columnWidth"
                 android:gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_below="@id/f_xin"
                 android:id="@+id/xin_list"
                 android:background="#fff">

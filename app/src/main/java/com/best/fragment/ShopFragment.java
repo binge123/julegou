@@ -24,6 +24,7 @@ import android.widget.Toast;
 
 import com.best.adapter.PingLunListViewAdapter;
 import com.best.bean.GoShopingCar;
+import com.best.bean.PingLun;
 import com.best.demo.julegou.BabyPopWindow;
 import com.best.demo.julegou.PaymentActivity;
 import com.best.demo.julegou.R;
@@ -39,7 +40,10 @@ import org.json.JSONObject;
 import org.w3c.dom.Text;
 import org.xutils.common.Callback;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import cn.sharesdk.framework.ShareSDK;
@@ -48,18 +52,19 @@ import cn.sharesdk.onekeyshare.OnekeyShare;
 /**
  * Created by dell2 on 2015/12/30.
  */
-public class ShopFragment extends Fragment implements View.OnClickListener{
+public class ShopFragment extends Fragment implements View.OnClickListener,BabyPopWindow.OnItemClickListener{
     private ListView lv;
     private LinearLayout line,all_choice_layout;
     private Button btn_addcar,btn_buy;
-    private ImageView iv_shopimg;
-    private TextView tv_shopname,tv_shopprice,tv_marketprice,tv_name,tv_stock,tv_name1,tv_content;
+    private ImageView iv_shopimg,iv_userimg;
+    private TextView tv_shopname,tv_shopprice,tv_marketprice,tv_name,tv_stock,tv_name1,tv_content,tv_username,tv_time;
     private String goodsname,shopprice,marketprice,shopid,goodsid,shopname,goodsstock,shopimg,username,userphoto,content,createtime,
                     userName,userPhoto;
     private RelativeLayout rl_color;
     private BabyPopWindow popWindow;
-    private XCFlowLayout mFlowLayout;
-    LayoutInflater layoutInflater;
+    //评价list
+    private List<PingLun> list = new ArrayList<>();
+    private LayoutInflater layoutInflater;
 //    private TagFlowLayout mFlowLayout;
     private String[] mVals = new String[]
             {"Hello", "Android", "Weclome Hi ", "Button", "TextView", "Hello",
@@ -76,7 +81,6 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
         btn_addcar = (Button) v.findViewById(R.id.addCar);
         btn_buy = (Button) v.findViewById(R.id.buyButton);
         all_choice_layout = (LinearLayout) v.findViewById(R.id.all_choice_layout);
-
         //商品图片
         iv_shopimg = (ImageView) v.findViewById(R.id.img);
         //goodsname
@@ -92,8 +96,15 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
         tv_stock = (TextView) v.findViewById(R.id.tv1);
         //评价内容
         tv_content = (TextView) v.findViewById(R.id.content);
+        //用户头像
+        iv_userimg = (ImageView) v.findViewById(R.id.userimg);
+        //用户名
+        tv_username = (TextView) v.findViewById(R.id.username);
+        //评论时间
+        tv_time = (TextView) v.findViewById(R.id.time);
         //颜色分类  实例化对象
         popWindow = new BabyPopWindow(getContext());
+        popWindow.setOnItemClickListener(this);
 
         //点击事件
         line.setOnClickListener(this);
@@ -102,7 +113,7 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
         rl_color.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                initChildViews();
+//                initChildViews();
                 setBackgroundBlack(all_choice_layout, 0);
                 popWindow.showAsDropDown(v);
             }
@@ -184,21 +195,24 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
         });
         //获取评价
         HashMap<String, String> map2 = new HashMap<>();
-        map2.put("sql","select b.userName,b.userPhoto,a.content,a.createTime from wst_goods_appraises a join wst_users b on a.userId = b.userId where a.goodsId =\'"+goodsid+"\'"+"and a.shopId=\'"+shopid+"\'");
+        map2.put("sql", "select b.userName,b.userPhoto,a.content,a.createTime from wst_goods_appraises a join wst_users b on a.userId = b.userId where a.goodsId =\'"+84+"\'"+"and a.shopId=\'"+26+ "\'");
         HttpUtils.httpGetRequest(map2, "/Api/exeQuery", new Callback.CommonCallback<String>() {
             @Override
             public void onSuccess(String s) {
-                Log.i("shoptest", s);
-
+//                Log.i("shoptest", s);
                 try {
                     JSONObject jsonObject = new JSONObject(s);
                     JSONArray jsonArray = jsonObject.getJSONArray("data");
-                    for(int i = 0;i < jsonArray.length();i++){
-
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        JSONObject object = jsonArray.getJSONObject(i);
+                        list.add(new PingLun(object.getString("userName"), object.getString("userPhoto"), object.getString("content"), object.getString("createTime")));
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+                tv_username.setText(list.get(0).getUsername());
+                tv_content.setText(list.get(0).getContent());
+                tv_time.setText(list.get(0).getTime());
             }
 
             @Override
@@ -214,53 +228,9 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
 
             }
         });
-
-
-
-
 //        lv.setAdapter(new PingLunListViewAdapter(getContext()));
         return v;
     }
-
-//    @Override
-//    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-//        final LayoutInflater mInflater = LayoutInflater.from(getActivity());
-//        View v = mInflater.inflate(R.layout.adapter_popwindow,null);
-//        mFlowLayout = (TagFlowLayout) v.findViewById(R.id.id_flowlayout);
-//        mFlowLayout.setMaxSelectCount(3);
-//        mFlowLayout.setAdapter(new TagAdapter<String>(mVals)
-//        {
-//            @Override
-//            public View getView(FlowLayout parent, int position, String s)
-//            {
-//                TextView tv = (TextView) mInflater.inflate(R.layout.tv,
-//                        mFlowLayout, false);
-//                tv.setText(s);
-//                return tv;
-//            }
-//        });
-//
-//        mFlowLayout.setOnTagClickListener(new TagFlowLayout.OnTagClickListener()
-//        {
-//            @Override
-//            public boolean onTagClick(View view, int position, FlowLayout parent)
-//            {
-//                Toast.makeText(getActivity(), mVals[position], Toast.LENGTH_SHORT).show();
-//                //view.setVisibility(View.GONE);
-//                return true;
-//            }
-//        });
-//
-//
-//        mFlowLayout.setOnSelectListener(new TagFlowLayout.OnSelectListener()
-//        {
-//            @Override
-//            public void onSelected(Set<Integer> selectPosSet)
-//            {
-//                getActivity().setTitle("choose:" + selectPosSet.toString());
-//            }
-//        });
-//    }
 
     @Override
     public void onClick(View v) {
@@ -292,27 +262,31 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
             // 启动分享GUI
             oks.show(getActivity());
         } else if (id == R.id.addCar) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-            builder.setCancelable(false);
-            builder.setMessage("是否加入购物车？");
-            builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    GoShopingCar gc = new GoShopingCar();
-
-                }
-            });
-            builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-
-                }
-            });
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
+            setBackgroundBlack(all_choice_layout, 0);
+            popWindow.showAsDropDown(v);
+//            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+//            builder.setCancelable(false);
+//            builder.setMessage("是否加入购物车？");
+//            builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+//                @Override
+//                public void onClick(DialogInterface dialog, int which) {
+//                    GoShopingCar gc = new GoShopingCar();
+//
+//                }
+//            });
+//            builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+//                @Override
+//                public void onClick(DialogInterface dialog, int which) {
+//
+//                }
+//            });
+//            AlertDialog alertDialog = builder.create();
+//            alertDialog.show();
         }else if(id == R.id.buyButton){
-            Intent intent = new Intent(getActivity(), PaymentActivity.class);
-            startActivity(intent);
+            setBackgroundBlack(all_choice_layout, 0);
+            popWindow.showAsDropDown(v);
+//            Intent intent = new Intent(getActivity(), PaymentActivity.class);
+//            startActivity(intent);
         }
     }
     /** 控制背景变暗 0变暗 1变亮 */
@@ -327,23 +301,28 @@ public class ShopFragment extends Fragment implements View.OnClickListener{
         }
     }
 
-    private void initChildViews() {
-        // TODO Auto-generated method stub
-        View v = layoutInflater.inflate(R.layout.adapter_popwindow, null);
-        mFlowLayout = (XCFlowLayout) v.findViewById(R.id.flowlayout);
-        ViewGroup.MarginLayoutParams lp = new ViewGroup.MarginLayoutParams(
-                RadioGroup.LayoutParams.WRAP_CONTENT, RadioGroup.LayoutParams.WRAP_CONTENT);
-        lp.leftMargin = 5;
-        lp.rightMargin = 5;
-        lp.topMargin = 5;
-        lp.bottomMargin = 5;
-        for(int i = 0; i < mVals.length; i ++){
-            TextView view = new TextView(getActivity());
-            view.setText(mVals[i]);
-            view.setTextColor(Color.WHITE);
-//            view.setBackgroundDrawable(getResources().getDrawable(R.drawable.textview_bg));
-            mFlowLayout.addView(view,lp);
-        }
+    @Override
+    public void onClickOKPop() {
+        setBackgroundBlack(all_choice_layout, 1);
     }
+
+//    private void initChildViews() {
+//        // TODO Auto-generated method stub
+//        View v = layoutInflater.inflate(R.layout.adapter_popwindow, null);
+//        mFlowLayout = (XCFlowLayout) v.findViewById(R.id.flowlayout);
+//        ViewGroup.MarginLayoutParams lp = new ViewGroup.MarginLayoutParams(
+//                RadioGroup.LayoutParams.WRAP_CONTENT, RadioGroup.LayoutParams.WRAP_CONTENT);
+//        lp.leftMargin = 5;
+//        lp.rightMargin = 5;
+//        lp.topMargin = 5;
+//        lp.bottomMargin = 5;
+//        for(int i = 0; i < mVals.length; i ++){
+//            TextView view = new TextView(getActivity());
+//            view.setText(mVals[i]);
+//            view.setTextColor(Color.WHITE);
+////            view.setBackgroundDrawable(getResources().getDrawable(R.drawable.textview_bg));
+//            mFlowLayout.addView(view,lp);
+//        }
+//    }
 
 }

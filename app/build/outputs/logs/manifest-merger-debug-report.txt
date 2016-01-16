@@ -59,20 +59,21 @@ ADDED from G:\julegou\app\src\main\AndroidManifest.xml:23:5-97
 		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:23:22-78
 application
 ADDED from G:\julegou\app\src\main\AndroidManifest.xml:24:5-96:19
-MERGED from [com.android.support:appcompat-v7:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [org.xutils:xutils:3.2.2] G:\julegou\app\build\intermediates\exploded-aar\org.xutils\xutils\3.2.2\AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [org.xutils:xutils:3.2.4] G:\julegou\app\build\intermediates\exploded-aar\org.xutils\xutils\3.2.4\AndroidManifest.xml:12:5-20
 MERGED from [me.xiaopan:pagerslidingtabstrip:1.6.0] G:\julegou\app\build\intermediates\exploded-aar\me.xiaopan\pagerslidingtabstrip\1.6.0\AndroidManifest.xml:12:5-20
-MERGED from [com.android.support:support-v4:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [julegou:smssdk:unspecified] G:\julegou\app\build\intermediates\exploded-aar\julegou\smssdk\unspecified\AndroidManifest.xml:11:5-14:19
-MERGED from [com.android.support:appcompat-v7:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [julegou:waterrefash:unspecified] G:\julegou\app\build\intermediates\exploded-aar\julegou\waterrefash\unspecified\AndroidManifest.xml:11:5-15:19
-MERGED from [com.android.support:appcompat-v7:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [julegou:flowlayout-lib:unspecified] G:\julegou\app\build\intermediates\exploded-aar\julegou\flowlayout-lib\unspecified\AndroidManifest.xml:11:5-14:19
-MERGED from [com.android.support:appcompat-v7:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.github.nicolasjafelle:paginggridview:1.0] G:\julegou\app\build\intermediates\exploded-aar\com.github.nicolasjafelle\paginggridview\1.0\AndroidManifest.xml:3:2-16
 	android:label
 		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:28:9-41
 	android:debuggable
@@ -187,21 +188,22 @@ ADDED from G:\julegou\app\src\main\AndroidManifest.xml:93:9-95:20
 		ADDED from G:\julegou\app\src\main\AndroidManifest.xml:93:19-51
 uses-sdk
 INJECTED from G:\julegou\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [org.xutils:xutils:3.2.2] G:\julegou\app\build\intermediates\exploded-aar\org.xutils\xutils\3.2.2\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [org.xutils:xutils:3.2.4] G:\julegou\app\build\intermediates\exploded-aar\org.xutils\xutils\3.2.4\AndroidManifest.xml:8:5-10:41
 MERGED from [me.xiaopan:pagerslidingtabstrip:1.6.0] G:\julegou\app\build\intermediates\exploded-aar\me.xiaopan\pagerslidingtabstrip\1.6.0\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:support-v4:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
 MERGED from [julegou:smssdk:unspecified] G:\julegou\app\build\intermediates\exploded-aar\julegou\smssdk\unspecified\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
 MERGED from [julegou:waterrefash:unspecified] G:\julegou\app\build\intermediates\exploded-aar\julegou\waterrefash\unspecified\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32] G:\julegou\app\build\intermediates\exploded-aar\com.ToxicBakery.viewpager.transforms\view-pager-transforms\1.2.32\AndroidManifest.xml:23:5-25:41
 MERGED from [julegou:flowlayout-lib:unspecified] G:\julegou\app\build\intermediates\exploded-aar\julegou\flowlayout-lib\unspecified\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] G:\julegou\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.github.nicolasjafelle:paginggridview:1.0] G:\julegou\app\build\intermediates\exploded-aar\com.github.nicolasjafelle\paginggridview\1.0\AndroidManifest.xml:4:2-69
 	android:targetSdkVersion
 		INJECTED from G:\julegou\app\src\main\AndroidManifest.xml
 		INJECTED from G:\julegou\app\src\main\AndroidManifest.xml
