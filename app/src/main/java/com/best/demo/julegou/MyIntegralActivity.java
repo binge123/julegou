@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.best.adapter.ViewPagerAdapter;
 
@@ -17,10 +18,19 @@ import me.xiaopan.psts.PagerSlidingTabStrip;
  * Created by dell2 on 2015/12/21.
  */
 public class MyIntegralActivity extends Activity {
+    private ImageView integralimg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myintegral);
+        integralimg = (ImageView) findViewById(R.id.integralimg);
+        //返回按钮的点击事件
+        integralimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MyIntegralActivity.this.finish();
+            }
+        });
         PagerSlidingTabStrip pagerSlidingTabStrip1 = (PagerSlidingTabStrip) findViewById(R.id.slidingTabStrip);
         ViewPager viewPager1 = (ViewPager) findViewById(R.id.viewPager);
         init(0, pagerSlidingTabStrip1, viewPager1);

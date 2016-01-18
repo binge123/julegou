@@ -65,6 +65,7 @@ public class AllDingDanFragment extends Fragment{
         map.put("token", sp.getString("tokens", "1"));
         HttpUtils.httpPostRequest(map, "/AllOrders/allorder", new Callback.CommonCallback<String>() {
             @Override
+
             public void onSuccess(String s) {
 //
                 Log.i("token", s);

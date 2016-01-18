@@ -20,6 +20,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.best.utils.HttpUtils;
@@ -44,9 +45,10 @@ import org.xutils.view.annotation.Event;
 
 >>>>>>> binge_repositories
 public class LoginActivity extends Activity {
-    EditText et_username,et_password;
-    Button btn;
-    String username = null,password = null,code = null,token = null;
+    private EditText et_username,et_password;
+    private Button btn;
+    private String username = null,password = null,code = null,token = null;
+    private ImageView loginimg;
     boolean networkState;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +57,17 @@ public class LoginActivity extends Activity {
         et_username = (EditText) findViewById(R.id.login_zhang);
         et_password = (EditText) findViewById(R.id.password);
         btn = (Button) findViewById(R.id.button);
+        loginimg = (ImageView) findViewById(R.id.loginimg);
+        //返回按钮的点击事件
+        loginimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LoginActivity.this.finish();
+            }
+        });
+
+
+        //登录按钮的点击事件
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

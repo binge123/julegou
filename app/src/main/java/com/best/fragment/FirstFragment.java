@@ -79,7 +79,7 @@ public class FirstFragment extends Fragment {
                 try {
                     JSONObject jsonObject = new JSONObject(s);
                     JSONArray jsonArray = jsonObject.getJSONArray("data");
-                    for (int i = 0; i < jsonArray.length(); i++) {
+                    for (int i = 0; i < 10; i++) {
                         JSONObject object = jsonArray.getJSONObject(i);
                         lists.add(new FirstShops(object.getString("goodsName"), object.getString("marketPrice"), object.getString("shopPrice"), object.getString("goodsThums"),object.getString("shopId"),object.getString("goodsId"),object.getString("goodsStock")));
                     }

@@ -2,6 +2,8 @@ package com.best.demo.julegou;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -24,6 +26,9 @@ public class MyGuanZhuActivity extends BaseActivity{
     RadioButton rb2;
     @ViewInject(R.id.gz_list)
     ListView gzlist;
+    @ViewInject(R.id.guanzhuimg)
+    ImageView guanzhuimg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +43,12 @@ public class MyGuanZhuActivity extends BaseActivity{
                 //根据ID获取RadioButton的实例
                 RadioButton rb = (RadioButton) MyGuanZhuActivity.this.findViewById(radioButtonId);
                 rb.setTextColor(getResources().getColor(R.color.bai));
+            }
+        });
+        guanzhuimg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MyGuanZhuActivity.this.finish();
             }
         });
     }

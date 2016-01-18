@@ -46,5 +46,9 @@ dependencies {
 >>>>>>> xuxu_repositories
 =======
     compile 'com.github.nicolasjafelle:paginggridview:1.0'
+<<<<<<< HEAD
+>>>>>>> xuxu_repositories
+=======
+    compile project(':pulltorefresh')
 >>>>>>> xuxu_repositories
 }

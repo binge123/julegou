@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
@@ -20,6 +21,7 @@ import com.best.fragment.DaiShouFragment;
 public class MyDingDanActivity extends AppCompatActivity implements View.OnClickListener {
 //    ProgressDialog pd;
     private RadioGroup rg1;
+    private ImageView dingdanback;
     private RadioButton rb1,rb2,rb3,rb4;
     private FragmentManager fm;
     private FragmentTransaction ftt;
@@ -37,11 +39,13 @@ public class MyDingDanActivity extends AppCompatActivity implements View.OnClick
         rb2 = (RadioButton) findViewById(R.id.radioButton2);
         rb3 = (RadioButton) findViewById(R.id.radioButton3);
         rb4 = (RadioButton) findViewById(R.id.radioButton4);
+        dingdanback = (ImageView) findViewById(R.id.dingdanback);
 
         rb1.setOnClickListener(this);
         rb2.setOnClickListener(this);
         rb3.setOnClickListener(this);
         rb4.setOnClickListener(this);
+        dingdanback.setOnClickListener(this);
 
         fm = getSupportFragmentManager();
         rb1.setChecked(true);
@@ -175,6 +179,8 @@ public class MyDingDanActivity extends AppCompatActivity implements View.OnClick
                 DaiShouFragment af = new DaiShouFragment();
                 ftt.add(R.id.fragment_parent,af,"radioButton3");
             }
+        }else if(id == R.id.dingdanback){
+            MyDingDanActivity.this.finish();
         }else {
             if(fm.findFragmentByTag("radioButton4")!=null){
                 ftt.show(fm.findFragmentByTag("radioButton4"));
