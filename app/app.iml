@@ -76,7 +76,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.github.nicolasjafelle/paginggridview/1.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/me.xiaopan/pagerslidingtabstrip/1.6.0/jars" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/org.xutils/xutils/3.2.4/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/org.xutils/xutils/3.2.6/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jacoco" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaResources" />
@@ -106,7 +106,7 @@
     <orderEntry type="library" exported="" name="ShareSDK-SinaWeibo-2.6.5" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-TencentWeibo-2.6.5" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-Wechat-Core-2.6.5" level="project" />
-    <orderEntry type="library" exported="" name="xutils-3.2.4" level="project" />
+    <orderEntry type="library" exported="" name="xutils-3.2.6" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-Email-2.6.5" level="project" />
     <orderEntry type="library" exported="" name="support-v4-23.0.0" level="project" />
     <orderEntry type="library" exported="" name="pagerslidingtabstrip-1.6.0" level="project" />
@@ -116,6 +116,7 @@
     <orderEntry type="library" exported="" name="AMap_Location_V2.2.0_20151222" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.0.0" level="project" />
     <orderEntry type="library" exported="" name="paginggridview-1.0" level="project" />
+    <orderEntry type="module" module-name="pulltorefresh" exported="" />
     <orderEntry type="module" module-name="flowlayout-lib" exported="" />
     <orderEntry type="module" module-name="smssdk" exported="" />
     <orderEntry type="module" module-name="waterrefash" exported="" />

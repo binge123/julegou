@@ -18,7 +18,7 @@ public class ShopViewPagerActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shop_viewpager);
         lv = (ListView) findViewById(R.id.listView);
-        lv.setAdapter(new PingLunListViewAdapter(getApplicationContext()));
+//        lv.setAdapter(new PingLunListViewAdapter(getApplicationContext()));
         //设置listView不让滚动
         lv.setOnTouchListener(new View.OnTouchListener() {
             @Override

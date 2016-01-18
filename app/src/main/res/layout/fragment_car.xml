@@ -6,8 +6,28 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/head"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/activity_graybg">
+            <TextView
+                android:textColor="@color/black_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物车"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+        <View
+            android:id="@+id/view_s"
+            android:layout_below="@id/head"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/press_click_color"/>
         <ScrollView
-            android:layout_alignParentTop="true"
+            android:layout_below="@id/view_s"
+            android:background="@color/bai"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/g_jst"

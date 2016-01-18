@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="G:\julegou\app\build\intermediates\exploded-aar\com.github.nicolasjafelle\paginggridview\1.0\jars\classes.jar"
+        jar="G:\julegou\app\build\intermediates\exploded-aar\julegou\pulltorefresh\unspecified\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="e399da3b4b2d6fb8babb5e12a38873b946f7d3bb">
-        <dex dex="G:\julegou\app\build\intermediates\pre-dexed\debug\classes-8442a7f6db9721f2e63f8af30326a5f708bbbadc.jar" />
+        sha1="31d381883fb2acfcaa0fe90af4ed760d14712c6e">
+        <dex dex="G:\julegou\app\build\intermediates\pre-dexed\debug\classes-5c7573da2f67fa6974051bffd37756e4acfd006e.jar" />
     </item>
 
 </items>

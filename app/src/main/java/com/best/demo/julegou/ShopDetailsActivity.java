@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import com.best.fragment.PingLunFragment;
 import com.best.fragment.ShopDetailFragment;
@@ -31,6 +32,9 @@ public class ShopDetailsActivity extends BaseActivity implements View.OnClickLis
     @ViewInject(R.id.radioButton3)
     private RadioButton rb3;
 
+    @ViewInject(R.id.backimg)
+    private ImageView backimg;
+
     FragmentManager fm;
     FragmentTransaction ftt;
     @Override
@@ -39,6 +43,7 @@ public class ShopDetailsActivity extends BaseActivity implements View.OnClickLis
         rb1.setOnClickListener(this);
         rb2.setOnClickListener(this);
         rb3.setOnClickListener(this);
+        backimg.setOnClickListener(this);
         fm = getSupportFragmentManager();
         rb1.setChecked(true);
         if(savedInstanceState == null){
@@ -84,6 +89,8 @@ public class ShopDetailsActivity extends BaseActivity implements View.OnClickLis
                 PingLunFragment af = new PingLunFragment();
                 ftt.add(R.id.fragment_parent,af,"radioButton3");
             }
+        }else if(id == R.id.backimg){
+            ShopDetailsActivity.this.finish();
         }
         ftt.commit();
     }

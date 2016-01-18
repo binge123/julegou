@@ -120,7 +120,7 @@ public class BabyPopWindow implements OnDismissListener, OnClickListener {
 	 * 获得商品属性数据
 	 * */
 	public void shopsshuxing() {
-		String sql = "select * from wst_products where goodId="+54;
+		String sql = "select * from wst_products where goodId="+636;
 		String types = "/Api/exeQuery";
 		HashMap<String,String> map = new HashMap<>();
 		map.put("sql", sql);

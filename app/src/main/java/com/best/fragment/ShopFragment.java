@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -27,6 +28,7 @@ import com.best.bean.GoShopingCar;
 import com.best.bean.PingLun;
 import com.best.demo.julegou.BabyPopWindow;
 import com.best.demo.julegou.PaymentActivity;
+import com.best.demo.julegou.PingLunListActivity;
 import com.best.demo.julegou.R;
 import com.best.utils.HttpUtils;
 import com.best.weidget.XCFlowLayout;
@@ -40,6 +42,7 @@ import org.json.JSONObject;
 import org.w3c.dom.Text;
 import org.xutils.common.Callback;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -55,7 +58,7 @@ import cn.sharesdk.onekeyshare.OnekeyShare;
 public class ShopFragment extends Fragment implements View.OnClickListener,BabyPopWindow.OnItemClickListener{
     private ListView lv;
     private LinearLayout line,all_choice_layout;
-    private Button btn_addcar,btn_buy;
+    private Button btn_addcar,btn_buy,btn_look_pinlun;
     private ImageView iv_shopimg,iv_userimg;
     private TextView tv_shopname,tv_shopprice,tv_marketprice,tv_name,tv_stock,tv_name1,tv_content,tv_username,tv_time;
     private String goodsname,shopprice,marketprice,shopid,goodsid,shopname,goodsstock,shopimg,username,userphoto,content,createtime,
@@ -63,13 +66,9 @@ public class ShopFragment extends Fragment implements View.OnClickListener,BabyP
     private RelativeLayout rl_color;
     private BabyPopWindow popWindow;
     //评价list
-    private List<PingLun> list = new ArrayList<>();
+    List<PingLun> list = new ArrayList<>();
     private LayoutInflater layoutInflater;
-//    private TagFlowLayout mFlowLayout;
-    private String[] mVals = new String[]
-            {"Hello", "Android", "Weclome Hi ", "Button", "TextView", "Hello",
-                    "Android", "Weclome", "Button ImageView", "TextView", "Helloworld",
-                    "Android", "Weclome Hello", "Button Text", "TextView"};
+
     @Nullable
     @Override
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -102,6 +101,8 @@ public class ShopFragment extends Fragment implements View.OnClickListener,BabyP
         tv_username = (TextView) v.findViewById(R.id.username);
         //评论时间
         tv_time = (TextView) v.findViewById(R.id.time);
+        //查看评论
+        btn_look_pinlun = (Button) v.findViewById(R.id.btn_look_pinlun);
         //颜色分类  实例化对象
         popWindow = new BabyPopWindow(getContext());
         popWindow.setOnItemClickListener(this);
@@ -287,6 +288,10 @@ public class ShopFragment extends Fragment implements View.OnClickListener,BabyP
             popWindow.showAsDropDown(v);
 //            Intent intent = new Intent(getActivity(), PaymentActivity.class);
 //            startActivity(intent);
+        }else if(id == R.id.btn_look_pinlun){
+            Intent intent = new Intent(getActivity(), PingLunListActivity.class);
+            intent.putExtra("listobj", (Serializable) list);
+            startActivity(intent);
         }
     }
     /** 控制背景变暗 0变暗 1变亮 */

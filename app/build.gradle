@@ -34,4 +34,5 @@ dependencies {
     compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
     compile project(':flowlayout-lib')
     compile 'com.github.nicolasjafelle:paginggridview:1.0'
+    compile project(':pulltorefresh')
 }

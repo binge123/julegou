@@ -6,20 +6,21 @@
     android:layout_height="match_parent">
     <LinearLayout
         android:orientation="horizontal"
-        android:background="#ff0030"
+        android:background="@color/activity_graybg"
         android:layout_width="match_parent"
         android:layout_height="45dp">
         <ImageView
+            android:id="@+id/dingdanback"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/back"/>
+            android:background="@drawable/backhei"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="我的订单"
-            android:textColor="#fff"
+            android:textColor="@color/black_text_color"
             android:layout_marginLeft="10dp"
             android:layout_gravity="center"
             android:textSize="22sp" />

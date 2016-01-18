@@ -4,23 +4,32 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#ff0030"
+        android:background="@color/activity_graybg"
         android:paddingTop="10dp"
         android:id="@+id/mymess_rl"
         android:paddingBottom="10dp">
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="30dp"
-            android:background="@drawable/back"
+            android:id="@+id/messageimg"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backhei"
             android:layout_marginLeft="20dp"/>
 
         <TextView
+            android:layout_toRightOf="@id/messageimg"
+            android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="我的消息"
-            android:textColor="#fff"
-            android:textSize="18sp"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:textColor="@color/black_text_color"
+            android:textSize="22sp"
+            android:layout_centerVertical="true" />
     </RelativeLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/mymess_rl"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/press_click_color"/>
 </RelativeLayout>
